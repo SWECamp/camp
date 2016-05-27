@@ -21,7 +21,8 @@ class camp extends CI_Controller {
 	{
 		$this->load->helper('url');
 
-		$this->load->view('index');
+		$this->load->view('home/head');
+		$this->load->view('home/body');
 	}
 
 	public function test($in)
