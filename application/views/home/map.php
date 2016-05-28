@@ -7,17 +7,17 @@
         <div class="col-12">
             <div class="contact-box col-4">
                 <div class="col-12 contact-icon"><i class="quickweb-icon-direction"></i></div> 
-                          <div class="col-12 contact-title">12 W 1st St 90001 Los Angeles , <br /> California</div>
+                          <div class="col-12 contact-title">อาคารนวัตกรรม  <br />มหาวิทยลัยวลัยลักษณ์</div>
 
                       </div>
                    <div class="contact-box col-4">
                        <div class="col-12 contact-icon"><i class="quickweb-icon-phone"></i></div>
-                       <div class="col-12 contact-title">+1-800-41-49-23</div>
+                       <div class="col-12 contact-title">075672206-7</div>
 
                    </div> 
                 <div class="contact-box col-4">
                      <div class="col-12 contact-icon"><i class="quickweb-icon-mail-alt"></i></div>
-                      <div class="col-12 contact-title">info@mzcreatives.com</div>
+                      <div class="col-12 contact-title">ncit2560wu.ac.th</div>
                 </div>
 
             

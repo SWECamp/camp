@@ -14,7 +14,15 @@
                                
                              </div>
                         </div>
-                <div class="col-6 mb-6 social right"><div class="col-3"><i class="quickweb-icon-facebook"></i></div><div class="col-3"><i class="quickweb-icon-twitter"></i></div><div class="col-3"><i class="quickweb-icon-youtube"></i></div><div class="col-3"><i class="quickweb-icon-gplus-1"></i></div></div>
+                <div class="col-6 mb-6 social right">
+                <div class="col-3">
+                <i class="quickweb-icon-facebook"></i></div>
+                <div class="col-3"><i class="quickweb-icon-twitter"></i></div>
+                <div class="col-3"><i class="quickweb-icon-youtube"></i></div>
+                <div class="col-3"><i class="quickweb-icon-gplus-1"></i></div>
+                <div class="col-3"><i class="fa fa-envelope"></i></div>
+                <div class="col-3"><i class="fa fa-car"></i></div>
+                </div>
                     </div>
               <div class="col-12 creator" style="padding-top:25px;">
                 <div class="col-6 copyright">© 2016 All Rights Reserved by MZCreatives. </div>
