@@ -24,5 +24,16 @@ class Model extends CI_Model {
 		return $tt; //ไปทั้งก้อน
 		//return $q;
 	}
+
+	public function setAccout($s)
+	{
+		$this->load->database();
+		$sql = $s;
+		
+		$tt = $this->db->query($sql);
+		//return $query->result(); เอาไปเฉพาะรีซอล
+		//return $tt; //ไปทั้งก้อน
+		//return $q;
+	}
 	
 }

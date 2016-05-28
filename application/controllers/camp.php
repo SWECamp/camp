@@ -150,8 +150,20 @@ class camp extends CI_Controller {
 		$food = $_POST('food');
 		$password = $_POST('password');
 		$artifect = 1;
-		$join = $_POST('');
-		$tour = $_POST('');
+		$join = $_POST('join');
+		$tour1 = $_POST('tour1');
+		$tour2 = $_POST('tour2');
+		$tour3 = $_POST('tour3');
+		if($tour1==""&&$tour2==""&&$tour3==""){
+			$tour1 = 0;
+			$tour2 = 0;
+			$tour3 = 0;
+		}
+
+		$sql = "INSERT INTO `account`(`accountID`, `title`, `firstname`, `lastname`, `address`, `province`, `postalcode`, `phoneno`, `email`, `department`, `food`, `password`, `artifact`, `join`, `tour1`, `tour2`, `tour3`) VALUES (null,'".$title."','".$firstname."','".$lastname."','".$address."','".$province."','".$postal."','".$phone."','".$email."','".$department."','".$food."','".$password."','".$artifect."','".$join."','".$tour1."','".$tour2."','".$tour3."')";
+		$this->load->model('Model');
+
+		$query=$this->Model->setAccount($sql);
 	}
 }
 

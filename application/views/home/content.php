@@ -69,9 +69,9 @@
                 <br>
                 
                     
-                
-
-                <div class="main-title font-color-m-light">รางวัล</div>
+                <br>
+                <a href=""> <h4>รายงานผลรางวัล Best paper award</h4></a>
+               
             </div>
 
             </div>
