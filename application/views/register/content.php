@@ -5,13 +5,13 @@
         	
         </div>
 		<div class="col-md-8 text-left">
-			<form action="" method="post"> 
+			<form action="<?php echo site_url('camp/submitRegister')?>" method="post"> 
 				<div class="form-group col-lg-2">
 					<label>คำนำหน้า</label>
 					<select name="title">
-					  <option value="">นาย</option>
-					  <option value="">นาง</option>
-					  <option value="">นางสาว</option>
+					  <option value="1">นาย</option>
+					  <option value="2">นาง</option>
+					  <option value="3">นางสาว</option>
 
 					</select>
 				</div>
@@ -203,7 +203,7 @@
 				</div>
 				<div class="form-group col-lg-6">
 					<label>e-mail</label>
-					<input type="text" name="" class="form-control" id="" value="" placeholder="e-mail" > 
+					<input type="text" name="email" class="form-control" id="" value="" placeholder="e-mail" > 
 				</div>
 				<div class="form-group col-lg-12">
 					<label>หน่วยงานต้นสังกัด</label>
@@ -243,7 +243,7 @@
 					<input type="password" name="" class="form-control" id="" value="" min="6" placeholder="กรุณายื่นยันรหัสผ่าน" > 
 				</div>
 				<div class="form-group col-lg-12 text-center	">
-					<button type="button" class="btn btn-primary">ยืนยัน</button>
+					<button type="submit" class="btn btn-primary">ยืนยัน</button>
 				</div>
 
 				

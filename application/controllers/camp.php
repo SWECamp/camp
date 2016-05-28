@@ -128,7 +128,11 @@ class camp extends CI_Controller {
 	public function user()
 	{
 		$this->load->helper('url');
-		echo "user";
+		$this->load->view('home/head');
+		$this->load->view('home/header');
+		$this->load->view('home/banner');
+		$this->load->view('user/content');
+		$this->load->view('home/foot');
 	}
 	public function admin()
 	{
@@ -138,22 +142,22 @@ class camp extends CI_Controller {
 	public function submitRegister()
 	{
 		$this->load->helper('url');
-		$title = $_POST('title');
-		$firstname = $_POST('firstname');
-		$lastname = $_POST('lastname'); 
-		$address = $_POST('address');
-		$province = $_POST('province');
-		$postal = $_POST('postal');
-		$phone = $_POST('phone');
-		$email = $_POST('email');
-		$department = $_POST('department');
-		$food = $_POST('food');
-		$password = $_POST('password');
+		$title = $_POST['title'];
+		$firstname = $_POST['firstname'];
+		$lastname = $_POST['lastname']; 
+		$address = $_POST['address'];
+		$province = $_POST['province'];
+		$postal = $_POST['postal'];
+		$phone = $_POST['phone'];
+		$email = $_POST['email'];
+		$department = $_POST['department'];
+		$food = $_POST['food'];
+		$password = $_POST['password'];
 		$artifect = 1;
-		$join = $_POST('join');
-		$tour1 = $_POST('tour1');
-		$tour2 = $_POST('tour2');
-		$tour3 = $_POST('tour3');
+		$join = $_POST['join'];
+		(isset($_POST['tour1']))?$tour1 = $_POST['tour1']:$tour1 = 0;
+		(isset($_POST['tour2']))?$tour2 = $_POST['tour2']:$tour2 = 0;
+		(isset($_POST['tour3']))?$tour3 = $_POST['tour3']:$tour3 = 0;
 		if($tour1==""&&$tour2==""&&$tour3==""){
 			$tour1 = 0;
 			$tour2 = 0;
@@ -161,9 +165,12 @@ class camp extends CI_Controller {
 		}
 
 		$sql = "INSERT INTO `account`(`accountID`, `title`, `firstname`, `lastname`, `address`, `province`, `postalcode`, `phoneno`, `email`, `department`, `food`, `password`, `artifact`, `join`, `tour1`, `tour2`, `tour3`) VALUES (null,'".$title."','".$firstname."','".$lastname."','".$address."','".$province."','".$postal."','".$phone."','".$email."','".$department."','".$food."','".$password."','".$artifect."','".$join."','".$tour1."','".$tour2."','".$tour3."')";
+		echo $sql;
 		$this->load->model('Model');
 
-		$query=$this->Model->setAccount($sql);
+		$query=$this->Model->setAccout($sql);
+
+		redirect('', 'refresh');
 	}
 }
 
