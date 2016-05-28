@@ -2,15 +2,25 @@
         <div class="container">
         <h1>ADMIN</h1>
                         
-            <table>
+            <center><table borber="1">
             	<tr>
-            		<td>ชื่อ</td>
-            		<td>ยืนยัน</td>
+                    <th>ชื่อต้น</th>
+            		<th>ชื่อ</th>
+                    <th>นามสกุล</th>
+                    <th>email</th>
+            		<th>ยืนยัน</th>
             	</tr>
-            	<tr>
-            		<td>ชื่อ</td>
-            		<td>ยืนยัน</td>
-            	</tr>
-            </table>
+        <?php 
+        foreach($data->result() as $row) { ?>
+        <tr>
+                    <td><?php echo $row->title; ?></td>
+                    <td><?php echo $row->firstname; ?></td>
+                    <td><?php echo $row->lastname; ?></td>
+                    <td><?php echo $row->email; ?></td>
+                    <td><a href="">ยืนยัน</a></td>
+        </tr>
+        <?php }
+         ?>
+        </table></center>
         </div>
     </section>
