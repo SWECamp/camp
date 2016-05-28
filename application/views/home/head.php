@@ -39,10 +39,4 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="<?php echo base_url(); ?>template/bootstrap/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="<?php echo base_url(); ?>template/bootstrap/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-        <link rel="stylesheet" href="<?php echo base_url(); ?>template/assets/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="<?php echo base_url(); ?>template/assets/css/form-elements.css">
-        <link rel="stylesheet" href="<?php echo base_url(); ?>template/assets/css/style.css">
 </head>

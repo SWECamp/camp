@@ -57,5 +57,13 @@
 
         });
     </script>
+    
+<!-- Latest compiled and minified JavaScript -->
+<script src="<?php echo base_url(); ?>template/bootstrap/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="<?php echo base_url(); ?>template/assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>template/assets/css/form-elements.css">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>template/assets/css/style.css">
+    <script src="<?php echo base_url(); ?>template/bootstrap/js/validator.min.js"></script>
 </body>
 </html>
