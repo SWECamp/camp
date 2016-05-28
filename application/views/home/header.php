@@ -4,7 +4,7 @@
                 <div class="container">
                     <div class="col-12">
                     <div class="col-2 mb-11 logo-set">
-                        <div class="logo"><img src="<?php echo base_url(); ?>template/LogoNCIT.png" width="140%"/></div>
+                        <div class="logo"><img src="<?php echo base_url(); ?>template/LogoNCIT.png" width="140%" width="50%"/></div>
 
                     </div>
 

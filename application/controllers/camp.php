@@ -44,7 +44,7 @@ class camp extends CI_Controller {
 
 		$this->load->view('home/head');
 		$this->load->view('home/header');
-		$this->load->view('home/banner');
+		//$this->load->view('home/banner');
 		$this->load->view('login/content');
 		//$this->load->view('home/service');
 		//$this->load->view('home/map');
@@ -213,6 +213,16 @@ class camp extends CI_Controller {
 		$this->load->view('best/content');
 		$this->load->view('home/foot');
 
+	}
+
+	public function reArtifact($id)
+	{
+		$this->load->helper('url');
+
+		$this->load->model('Model');
+
+		$query=$this->Model->setReArtifact($id);
+		redirect('camp/admin', 'refresh');
 	}
 }
 

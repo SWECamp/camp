@@ -53,5 +53,16 @@ class Model extends CI_Model {
 		return $tt; //ไปทั้งก้อน
 		//return $q;
 	}
+
+	public function setReArtifact($id)
+	{
+		$this->load->database();
+		$sql = "UPDATE `swecamp`.`account` SET `artifact` = '2' WHERE `account`.`accountID` = ".$id.";";
+		
+		$tt = $this->db->query($sql);
+		//return $query->result(); เอาไปเฉพาะรีซอล
+		//return $tt; //ไปทั้งก้อน
+		//return $q;
+	}
 	
 }

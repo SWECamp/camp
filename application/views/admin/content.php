@@ -13,11 +13,14 @@
         <?php 
         foreach($data->result() as $row) { ?>
         <tr>
-                    <td><?php echo $row->title; ?></td>
+                    <td><?php if($row->title == 1){ echo "นาย";
+                    }else if($row->title == 1){ echo "นาง";
+                        }else{ echo "นางสาว";
+                        } ?></td>
                     <td><?php echo $row->firstname; ?></td>
                     <td><?php echo $row->lastname; ?></td>
                     <td><?php echo $row->email; ?></td>
-                    <td><a href="">ยืนยัน</a></td>
+                    <td><a href="<?php echo site_url('camp/reArtifact/'.$row->accountID); ?>">ยืนยัน</a></td>
         </tr>
         <?php }
          ?>
