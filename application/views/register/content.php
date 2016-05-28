@@ -192,8 +192,13 @@
 					</select>
 				</div>
 				<div class="form-group col-lg-6">
+<<<<<<< HEAD
 					<label>รหัสไปรษณี</label>
 					<input type="text" name="postal" class="form-control" id="" value="" placeholder="รหัสไปรษณี" > 
+=======
+					<label>รหัสไปรษณีย์</label>
+					<input type="text" name="" class="form-control" id="" value="" placeholder="รหัสไปรษณีย์" > 
+>>>>>>> bb0072618f9e3414a96b0fa01d572b966bb8618d
 
 				</div>
 				<div class="form-group col-lg-6">
