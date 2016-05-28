@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>One page website template for multipurpose website</title>
+    <title>งานประชุมวิชาการระดับชาติ NCIT 2560</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
     <meta charset="utf-8" />
      <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />

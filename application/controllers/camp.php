@@ -25,8 +25,8 @@ class camp extends CI_Controller {
 		$this->load->view('home/header');
 		$this->load->view('home/banner');
 		$this->load->view('home/content');
-		$this->load->view('home/service');
-		$this->load->view('home/map');
+		//$this->load->view('home/service');
+		//$this->load->view('home/map');
 		$this->load->view('home/foot');
 	}
 
@@ -46,8 +46,8 @@ class camp extends CI_Controller {
 		$this->load->view('home/header');
 		$this->load->view('home/banner');
 		$this->load->view('login/content');
-		$this->load->view('home/service');
-		$this->load->view('home/map');
+		//$this->load->view('home/service');
+		//$this->load->view('home/map');
 		$this->load->view('home/foot');
 	}
 
