@@ -193,8 +193,8 @@
 				</div>
 				<div class="form-group col-lg-6">
 					
-					<label>รหัสไปรษณี</label>
-					<input type="text" name="postal" class="form-control" id="" value="" placeholder="รหัสไปรษณี" >
+					<label>รหัสไปรษณีย์</label>
+					<input type="text" name="postal" class="form-control" id="" value="" placeholder="รหัสไปรษณีย์" >
 
 				</div>
 				<div class="form-group col-lg-6">
@@ -240,7 +240,7 @@
 				</div>
 				<div class="form-group col-lg-12">
 					<label>ใส่รหัสผ่านอีกครั้ง</label>
-					<input type="password" name="" class="form-control" id="" value="" min="6" placeholder="กรุณายื่นยันรหัสผ่าน" > 
+					<input type="password" name="" class="form-control" id="" value="" min="6" placeholder="กรุณายืนยันรหัสผ่าน" > 
 				</div>
 				<div class="form-group col-lg-12 text-center	">
 					<button type="submit" class="btn btn-primary">ยืนยัน</button>
