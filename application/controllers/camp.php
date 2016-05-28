@@ -119,19 +119,25 @@ class camp extends CI_Controller {
 		 }
 		$query=$this->Model->getUser($username,$password);
 		foreach($query->result() as $row) {
-			redirect('camp/user', 'refresh');
+
+			redirect('camp/user/'.$row->accountID, 'refresh');
 		 }
 
 		redirect('camp/login', 'refresh');
 		//$this->load->view('home/foot');
 	}
-	public function user()
+	public function user($acID)
 	{
+		$this->load->model('Model');
+		
 		$this->load->helper('url');
 		$this->load->view('home/head');
 		$this->load->view('home/header');
 		$this->load->view('home/banner');
-		$this->load->view('user/content');
+		$data['result'] =$this->Model->getUserdatial($acID);
+
+		//$data['id'] = $acID ;
+		$this->load->view('user/content',$data);
 		$this->load->view('home/foot');
 	}
 	public function admin()

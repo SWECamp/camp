@@ -24,6 +24,13 @@ class Model extends CI_Model {
 		return $tt; //ไปทั้งก้อน
 		//return $q;
 	}
+	public function getUserdatial($id)
+	{
+		$this->load->database();
+		$sql = "SELECT * FROM `account` WHERE accountID=".$id.";";
+		$q = $this->db->query($sql);
+		return $q ;
+	}
 
 	public function setAccout($s)
 	{
