@@ -7,7 +7,7 @@
         <div class="col-12">
             <div class="contact-box col-4">
                 <div class="col-12 contact-icon"><i class="quickweb-icon-direction"></i></div> 
-                          <div class="col-12 contact-title">อาคารนวัตกรรม  <br />มหาวิทยลัยวลัยลักษณ์</div>
+                          <div class="col-12 contact-title">อาคารนวัตกรรม  <br />มหาวิทยาลัยวลัยลักษณ์</div>
 
                       </div>
                    <div class="contact-box col-4">
