@@ -7,7 +7,7 @@
                <div class="banner_brief_text">Education not only broadens the mind but adds the most important component for critical thought, depth.</div>
                <div    class="mb-center mb-12">
                <div class="button-1">
-                   <a href="#">Create Your Site</a></div></div>          
+                   <a href="<?php echo site_url('camp/login') ?>">เข้าสู่ระบบ</a></div></div>          
            </div>
             <div class="col-7 mb-12 banner-image"  style="position:relative;"><!--<img src="image/banner2_image.png"  />--></div>
         </div>
