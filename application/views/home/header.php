@@ -3,7 +3,7 @@
                     <header class="header">
                 <div class="container">
                     <div class="col-12">
-                    <div class="col-3 mb-11 logo-set">
+                    <div class="col-2 mb-11 logo-set">
                         <div class="logo"><img src="<?php echo base_url(); ?>template/image/blacklogo.png" /></div>
 
                     </div>
@@ -15,7 +15,7 @@
                    </nav>
 
                         
-                    <nav class="col-9 menu mob-menu pull-right">
+                    <nav class="col-10 menu mob-menu pull-right">
                         
                          <nav class="mob-menu-icon" style="padding: 26px 26px;width: 100%;box-sizing: border-box;border-bottom:2px solid #1565C0; ">
                         
