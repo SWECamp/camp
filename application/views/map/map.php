@@ -3,7 +3,7 @@
     </section>
     
     <section class="contact-address section-padding color-light-white">
-        <div class="container">
+      <div class="container">
         <div class="col-12">
             <div class="contact-box col-4">
                 <div class="col-12 contact-icon"><i class="quickweb-icon-direction"></i></div> 
@@ -21,5 +21,6 @@
                 </div>
 
             
-    </div></div>
-            </section>
+      </div>
+    </div>
+   </section>
