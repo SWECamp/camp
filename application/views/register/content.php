@@ -8,7 +8,7 @@
 			<form action="" method="post"> 
 				<div class="form-group col-lg-2">
 					<label>คำนำหน้า</label>
-					<select name="title" form="">
+					<select name="title">
 					  <option value="">นาย</option>
 					  <option value="">นาง</option>
 					  <option value="">นางสาว</option>
@@ -32,7 +32,7 @@
 				</div>
 				<div class="form-group col-lg-6">
 					<label>จังหวัด</label><br>
-					<select name="province" form="" style="width:100%;" >
+					<select name="province" style="width:100%;" >
 					  <option value="0">- เลือกจังหวัด -</option>
 
 
@@ -203,7 +203,7 @@
 				</div>
 				<div class="form-group col-lg-6">
 					<label>e-mail</label>
-					<input type="email" name="" class="form-control" id="" value="" placeholder="e-mail" > 
+					<input type="text" name="" class="form-control" id="" value="" placeholder="e-mail" > 
 				</div>
 				<div class="form-group col-lg-12">
 					<label>หน่วยงานต้นสังกัด</label>
@@ -214,6 +214,25 @@
 					<textarea name="food" style="height:100px;width:100%;" rows="6" cols="50"></textarea>
  
 				</div>
+				<div class="form-group col-lg-12	">
+					<label>เลือกประเภทผู้เข้าร่วมประชุมวิชาการ</label>
+					<select name="join" style="width:100%;" >
+					  <option value="1">ผู้นำเสนอผลงาน</option>
+					  <option value="2">ผู้สนใจเข้าร่วมงาน</option>
+
+					</select>
+				</div>
+				<div class="form-group col-lg-12		">
+					<label> เข้าร่วมกิจกรรมท่องเที่ยว</label><br>
+					<input type="checkbox" name="tour1" value="1"> ชม โลมาสีชมพู ดำน้ำทะเลขนอม-หมู่เกาะทะเลใต้เกาะราบ หรือ เกาะแตน
+<small>จ่ายเงินเพิ่ม 2,000</small> <br>
+					<input type="checkbox" name="tour2" value="1"> เขาหลวง น้ำตกกรุงชิง <small>จ่ายเงินเพิ่ม 1,000</small>  <BR>
+					<input type="checkbox" name="tour3" value="1"> สัมผัสเสน่ห์เมืองนครศรีธรรมราช <small>จ่ายเงินเพิ่ม 1,000</small>  <br>
+				</div>
+
+
+
+				
 				<hr>
 				<div class="form-group col-lg-12">
 					<label>รหัสผ่าน</label>
