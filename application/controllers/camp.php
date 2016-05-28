@@ -103,6 +103,38 @@ class camp extends CI_Controller {
 		$this->load->view('contact/content');
 		$this->load->view('home/foot');
 	}
+	public function submit()
+	{
+		$this->load->helper('url');
+		($_POST['username'] != "")?$username = $_POST['username']:$username = "";
+		($_POST['password'] != "")?$password = $_POST['password']:$password = "";
+		//$this->load->view('home/head');
+		//$this->load->view('home/header');
+		//$this->load->view('home/banner');
+		$this->load->model('Model');
+
+		$query=$this->Model->getAdmin($username,$password);
+		foreach($query->result() as $row) {
+			redirect('camp/admin', 'refresh');
+		 }
+		$query=$this->Model->getUser($username,$password);
+		foreach($query->result() as $row) {
+			redirect('camp/user', 'refresh');
+		 }
+
+		redirect('camp/login', 'refresh');
+		//$this->load->view('home/foot');
+	}
+	public function user()
+	{
+		$this->load->helper('url');
+		echo "user";
+	}
+	public function admin()
+	{
+		$this->load->helper('url');
+		echo "admin";
+	}
 }
 
 /* End of file welcome.php */
