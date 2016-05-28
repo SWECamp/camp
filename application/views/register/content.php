@@ -5,10 +5,15 @@
         	
         </div>
 		<div class="col-md-8 text-left">
-			<form>
+			<form action="" method="post"> 
 				<div class="form-group col-lg-2">
+<<<<<<< HEAD
 					<label>คำนำหน้า</label><br>
 					<select name="" form="">
+=======
+					<label>คำนำหน้า</label>
+					<select name="title">
+>>>>>>> 097a89874cd1401f6010b05f0076322308cbf471
 					  <option value="">นาย</option>
 					  <option value="">นาง</option>
 					  <option value="">นางสาว</option>
@@ -16,22 +21,36 @@
 					</select>
 				</div>
 				<div class="form-group col-lg-5">
+<<<<<<< HEAD
 					<label>ชื่อ</label><br>
 					<input type="text" name="" class="form-control" id="" value="" placeholder="ชื่อ" > 
 				</div>
 				<div class="form-group col-lg-5">
 					<label>นามสกุล</label><br>
 					<input type="text" name="" class="form-control" id="" value="" placeholder="นามสกุล"> 
+=======
+					<label>ชื่อ</label>
+					<input type="text" name="firstname" class="form-control" id="" value="" placeholder="ชื่อ" > 
+				</div>
+				<div class="form-group col-lg-5">
+					<label>นามสกุล</label>
+					<input type="text" name="lastname" class="form-control" id="" value="" placeholder="นามสกุล"> 
+>>>>>>> 097a89874cd1401f6010b05f0076322308cbf471
 				</div>
 				<br>
 				<div class="form-group col-lg-12">
 					<label>ที่อยู่</label><br>
-					<textarea style="height:100px;width:100%;" rows="6" cols="50" placeholder="181/52 ...."></textarea>
+					<textarea name="address" style="height:100px;width:100%;" rows="6" cols="50" placeholder="181/52 ...."></textarea>
  
 				</div>
 				<div class="form-group col-lg-6">
+<<<<<<< HEAD
 					<label>จังหวัด</label><br><br>
 					<select name="" form="" style="width:100%;" >
+=======
+					<label>จังหวัด</label><br>
+					<select name="province" style="width:100%;" >
+>>>>>>> 097a89874cd1401f6010b05f0076322308cbf471
 					  <option value="0">- เลือกจังหวัด -</option>
 
 
@@ -191,6 +210,7 @@
 					</select>
 				</div>
 				<div class="form-group col-lg-6">
+<<<<<<< HEAD
 					<label>รหัสไปรษณี</label><br>
 					<input type="text" name="" class="form-control" id="" value="" placeholder="รหัสไปรษณี" > 
 
@@ -210,12 +230,58 @@
 				<div class="form-group col-lg-12">
 					<label>รายการแพ้อาหาร</label><br><br>
 					<textarea style="height:100px;width:100%;" rows="6" cols="50"></textarea>
+=======
+					
+					<label>รหัสไปรษณี</label>
+					<input type="text" name="postal" class="form-control" id="" value="" placeholder="รหัสไปรษณี" >
+
+				</div>
+				<div class="form-group col-lg-6">
+					<label>เบอร์โทรศัพท์</label>
+					<input type="text" name="phone" class="form-control" id="" value="" placeholder="เบอร์โทรศัพท์" > 
+				</div>
+				<div class="form-group col-lg-6">
+					<label>e-mail</label>
+					<input type="text" name="" class="form-control" id="" value="" placeholder="e-mail" > 
+				</div>
+				<div class="form-group col-lg-12">
+					<label>หน่วยงานต้นสังกัด</label>
+					<input type="text" name="department" class="form-control" id="" value="" placeholder="" > 
+				</div>
+				<div class="form-group col-lg-12">
+					<label>รายการแพ้อาหาร</label><br>
+					<textarea name="food" style="height:100px;width:100%;" rows="6" cols="50"></textarea>
+>>>>>>> 097a89874cd1401f6010b05f0076322308cbf471
  
 				</div>
+				<div class="form-group col-lg-12	">
+					<label>เลือกประเภทผู้เข้าร่วมประชุมวิชาการ</label>
+					<select name="join" style="width:100%;" >
+					  <option value="1">ผู้นำเสนอผลงาน</option>
+					  <option value="2">ผู้สนใจเข้าร่วมงาน</option>
+
+					</select>
+				</div>
+				<div class="form-group col-lg-12		">
+					<label> เข้าร่วมกิจกรรมท่องเที่ยว</label><br>
+					<input type="checkbox" name="tour1" value="1"> ชม โลมาสีชมพู ดำน้ำทะเลขนอม-หมู่เกาะทะเลใต้เกาะราบ หรือ เกาะแตน
+<small>จ่ายเงินเพิ่ม 2,000</small> <br>
+					<input type="checkbox" name="tour2" value="1"> เขาหลวง น้ำตกกรุงชิง <small>จ่ายเงินเพิ่ม 1,000</small>  <BR>
+					<input type="checkbox" name="tour3" value="1"> สัมผัสเสน่ห์เมืองนครศรีธรรมราช <small>จ่ายเงินเพิ่ม 1,000</small>  <br>
+				</div>
+
+
+
+				
 				<hr>
 				<div class="form-group col-lg-12">
+<<<<<<< HEAD
 					<label>รหัสผ่าน</label><br>
 					<input type="password" name="" class="form-control" id="" value="" min="6" placeholder="กรุณาใส่รหัสผ่านอย่างน้อย 6 ตัวอักษร" > 
+=======
+					<label>รหัสผ่าน</label>
+					<input type="password" name="password" class="form-control" id="" value="" min="6" placeholder="กรุณาใส่รหัสผ่านอย่างน้อย 6 ตัวอักษร" > 
+>>>>>>> 097a89874cd1401f6010b05f0076322308cbf471
 				</div>
 				<div class="form-group col-lg-12">
 					<label>ใส่รหัสผ่านอีกครั้ง</label><br>
