@@ -44,7 +44,7 @@ class camp extends CI_Controller {
 
 		$this->load->view('home/head');
 		$this->load->view('home/header');
-		$this->load->view('home/banner');
+		//$this->load->view('home/banner');
 		$this->load->view('login/content');
 		//$this->load->view('home/service');
 		//$this->load->view('home/map');
@@ -57,7 +57,7 @@ class camp extends CI_Controller {
 
 		$this->load->view('home/head');
 		$this->load->view('home/header');
-		$this->load->view('home/banner');
+		//$this->load->view('home/banner');
 		$this->load->view('register/content');
 		$this->load->view('home/foot');
 	}
@@ -68,7 +68,7 @@ class camp extends CI_Controller {
 
 		$this->load->view('home/head');
 		$this->load->view('home/header');
-		$this->load->view('home/banner');
+		//$this->load->view('home/banner');
 		$this->load->view('detial/content');
 		$this->load->view('home/foot');
 	}
@@ -79,7 +79,7 @@ class camp extends CI_Controller {
 
 		$this->load->view('home/head');
 		$this->load->view('home/header');
-		$this->load->view('home/banner');
+		//$this->load->view('home/banner');
 		$this->load->view('home/map');
 		$this->load->view('home/foot');
 	}
@@ -89,7 +89,7 @@ class camp extends CI_Controller {
 
 		$this->load->view('home/head');
 		$this->load->view('home/header');
-		$this->load->view('home/banner');
+		//$this->load->view('home/banner');
 		$this->load->view('date/content');
 		$this->load->view('home/foot');
 	}
@@ -99,7 +99,7 @@ class camp extends CI_Controller {
 
 		$this->load->view('home/head');
 		$this->load->view('home/header');
-		$this->load->view('home/banner');
+		//$this->load->view('home/banner');
 		$this->load->view('contact/content');
 		$this->load->view('home/foot');
 	}
@@ -110,7 +110,7 @@ class camp extends CI_Controller {
 		($_POST['password'] != "")?$password = $_POST['password']:$password = "";
 		//$this->load->view('home/head');
 		//$this->load->view('home/header');
-		//$this->load->view('home/banner');
+		////$this->load->view('home/banner');
 		$this->load->model('Model');
 
 		$query=$this->Model->getAdmin($username,$password);
@@ -134,7 +134,7 @@ class camp extends CI_Controller {
 		$this->load->helper('url');
 		$this->load->view('home/head');
 		$this->load->view('home/header');
-		$this->load->view('home/banner');
+		//$this->load->view('home/banner');
 		$data['result'] =$this->Model->getUserdatial($acID);
 
 		//$data['id'] = $acID ;
@@ -151,7 +151,7 @@ class camp extends CI_Controller {
 
 		$this->load->view('home/head');
 		$this->load->view('home/header');
-		$this->load->view('home/banner');
+		//$this->load->view('home/banner');
 		$this->load->view('admin/content',$query);
 		$this->load->view('home/foot');
 
@@ -165,7 +165,7 @@ class camp extends CI_Controller {
 
 		$this->load->view('home/head');
 		$this->load->view('home/header');
-		$this->load->view('home/banner');
+		//$this->load->view('home/banner');
 		$this->load->view('admin/content',$query);
 		$this->load->view('home/foot');
 
@@ -210,7 +210,7 @@ class camp extends CI_Controller {
 
 		$this->load->view('home/head');
 		$this->load->view('home/header');
-		$this->load->view('home/banner');
+		//$this->load->view('home/banner');
 		$this->load->view('best/content');
 		$this->load->view('home/foot');
 
