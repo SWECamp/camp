@@ -1,9 +1,9 @@
 <section class="banner top" id="home" style="background-image:url(<?php echo base_url(); ?>template/image/banner1.jpg);>
         <div class="texture">
         <div class="container">
-           <div class="col-5 mb-12 mb-center banner-box">
-               <!--<div class="banner_line1">การประชุมวิชาการระดับประเทศ</div>
-               <div class="banner_brief_text">มหาวิทยาลัยวลัยลักษณ์ได้รับเกียรติให้เป็นเจ้าภาพการประชุมวิชาการระดับประเทศ NCIT 2560 โดยมีเป้าหมายเพื่อกระตุ้นและส่งเสริมการวิจัยและพัฒนาองค์ความรู้ทางด้านเทคโนโลยีสารสนเทศภายในประเทศให้แพร่หลาย </div>
+           <div class="col-9 mb-12 mb-center banner-box text-left">
+               <div class="banner_line1">การประชุมวิชาการระดับประเทศทางด้านเทคโนโลยีสารสนเทศ</div>
+              <!-- <div class="banner_brief_text">มหาวิทยาลัยวลัยลักษณ์ได้รับเกียรติให้เป็นเจ้าภาพการประชุมวิชาการระดับประเทศ NCIT 2560 โดยมีเป้าหมายเพื่อกระตุ้นและส่งเสริมการวิจัยและพัฒนาองค์ความรู้ทางด้านเทคโนโลยีสารสนเทศภายในประเทศให้แพร่หลาย </div>
                -->
                <div    class="mb-center mb-12">
                <div class="button-1 text-center">
