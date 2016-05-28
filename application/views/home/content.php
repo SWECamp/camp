@@ -1,6 +1,6 @@
 <section class="choose-theme section-padding color-red"  id="about">
         <div class="container">
-            <div class="main-title font-color-m-light">การประชุมวิชาการระดับประเทศ</div>
+            <div class="main-title font-color-m-light">Xการประชุมวิชาการระดับประเทศ</div>
 
             <div class="table-responsive">
                 มหาวิทยาลัยวลัยลักษณ์ได้รับเกียรติให้เป็นเจ้าภาพการประชุมวิชาการระดับประเทศ NCIT 2560 โดยมีเป้าหมายเพื่อกระตุ้นและส่งเสริมการวิจัยและพัฒนาองค์ความรู้ทางด้านเทคโนโลยีสารสนเทศภายในประเทศให้แพร่หลาย
