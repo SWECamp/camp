@@ -215,6 +215,16 @@ class camp extends CI_Controller {
 		$this->load->view('home/foot');
 
 	}
+
+	public function reArtifact($id)
+	{
+		$this->load->helper('url');
+
+		$this->load->model('Model');
+
+		$query=$this->Model->setReArtifact($id);
+		redirect('camp/admin', 'refresh');
+	}
 }
 
 /* End of file welcome.php */
