@@ -22,7 +22,12 @@ class camp extends CI_Controller {
 		$this->load->helper('url');
 
 		$this->load->view('home/head');
-		$this->load->view('home/body');
+		$this->load->view('home/header');
+		$this->load->view('home/banner');
+		$this->load->view('home/content');
+		$this->load->view('home/service');
+		$this->load->view('home/map');
+		$this->load->view('home/foot');
 	}
 
 	public function test($in)
@@ -33,11 +38,17 @@ class camp extends CI_Controller {
 		$this->load->view('index2',$data);
 	}
 
-	public function test2()
+	public function login()
 	{
-		$this->load->model('Model');
-		$data['num'] = $_POST['num'];
-		$this->load->view('index3',$data);
+		$this->load->helper('url');
+
+		$this->load->view('home/head');
+		$this->load->view('home/header');
+		$this->load->view('home/banner');
+		$this->load->view('login/content');
+		$this->load->view('home/service');
+		$this->load->view('home/map');
+		$this->load->view('home/foot');
 	}
 }
 
