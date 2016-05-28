@@ -3,7 +3,7 @@
                     <header class="header">
                 <div class="container">
                     <div class="col-12">
-                    <div class="col-4 mb-11 logo-set">
+                    <div class="col-3 mb-11 logo-set">
                         <div class="logo"><img src="<?php echo base_url(); ?>template/image/blacklogo.png" /></div>
 
                     </div>
@@ -15,7 +15,7 @@
                    </nav>
 
                         
-                    <nav class="col-8 menu mob-menu pull-right">
+                    <nav class="col-9 menu mob-menu pull-right">
                         
                          <nav class="mob-menu-icon" style="padding: 26px 26px;width: 100%;box-sizing: border-box;border-bottom:2px solid #1565C0; ">
                         
@@ -32,13 +32,12 @@
                             </div>
 
                         </div>-->
-                        <div class="menu-item-box center "><a href="#home" class="menu-link">Home</a></div>
-                        <div class="menu-item-box center "><a href="#about" class="menu-link">About</a></div>
-                        <div class="menu-item-box center "><a href="#services" class="menu-link">Services</a></div>
-                        <div class="menu-item-box center "><a href="#services" class="menu-link">Team</a></div>
-                        <div class="menu-item-box center "><a href="#portfolio" class="menu-link">Portfolio</a></div>
-                        <div class="menu-item-box center "><a href="#testimonial" class="menu-link">Testimonial</a></div>
-                        <div class="menu-item-box center "><a href="#contact" class="menu-link">Contact</a></div>
+                        <div class="menu-item-box center "><a href="#home" class="menu-link">หน้าแรก</a></div>
+                        <div class="menu-item-box center "><a href="#home" class="menu-link">สมัครเข้าร่วมการประชุม</a></div>
+                        <div class="menu-item-box center "><a href="#home" class="menu-link">การเข้าร่วมการประชุม</a></div>
+                        <div class="menu-item-box center "><a href="#about" class="menu-link">กำหนดการประชุม</a></div>
+                        <div class="menu-item-box center "><a href="#services" class="menu-link">สถานที่จัดประชุม</a></div>
+                        <div class="menu-item-box center "><a href="#contact" class="menu-link">ข้อมูลการติดต่อ</a></div>
                         
 
                         </nav>

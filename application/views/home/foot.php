@@ -2,6 +2,8 @@
             
             <div class="bottom-footer">
                 <div class="container">
+
+                   <!-- 
                     <div class="col-12">
                         <div class="col-6 mb-6" style="color:#606873">
                             <div class="footer-menu" style="vertical-align:middle;">
@@ -28,6 +30,8 @@
                     <div class="col-8" style="color: #E5E5E5;font-weight: 100;font-size: 15px;">Made With <i class="quickweb-icon-heart" style="color:rgb(216, 24, 24);font-size:20px;"></i>By</div>
                     <div class="col-4 footer-logo" >    <img src="image/iislogo.png" style="" /></div> </div>
              </div>
+                !-->
+             <div class="text-center" >งานประชุมวิชาการระดับชาติ NCIT 2560 . <a href="http://facebook.com/" target="_blank"><i class="quickweb-icon-facebook"></i></a> <a href="http://twitter.com/" target="_blank"><i class="quickweb-icon-twitter"></i></a> </div>
             </div>
             </div>
         </section>
