@@ -34,10 +34,11 @@
                         </div>-->
                         <div class="menu-item-box center "><a href="<?php echo base_url(); ?>" class="menu-link">หน้าแรก</a></div>
                         <div class="menu-item-box center "><a href="<?php echo site_url('/camp/register'); ?>" class="menu-link">สมัครเข้าร่วมการประชุม</a></div>
-                        <div class="menu-item-box center "><a href="#home" class="menu-link">การเข้าร่วมการประชุม</a></div>
-                        <div class="menu-item-box center "><a href="#about" class="menu-link">กำหนดการประชุม</a></div>
-                        <div class="menu-item-box center "><a href="#services" class="menu-link">สถานที่จัดประชุม</a></div>
-                        <div class="menu-item-box center "><a href="#contact" class="menu-link">ข้อมูลการติดต่อ</a></div>
+                        <div class="menu-item-box center "><a href="<?php echo site_url('/camp/menuDetail'); ?>" class="menu-link">การเข้าร่วมการประชุม</a></div>
+                        <div class="menu-item-box center "><a href="<?php echo site_url('/camp/menuDate'); ?>" class="menu-link">กำหนดการประชุม</a></div>
+                        <div class="menu-item-box center "><a href="<?php echo site_url('/camp/menuPlace'); ?>" class="menu-link">สถานที่จัดประชุม</a></div>
+                        <div class="menu-item-box center "><a href="<?php echo site_url('/camp/menuContact'); ?>" class="menu-link">ข้อมูลการติดต่อ</a></div>
+
                         
 
                         </nav>
