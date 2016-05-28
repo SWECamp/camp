@@ -5,10 +5,10 @@
         	
         </div>
 		<div class="col-md-8 text-left">
-			<form>
+			<form action="" method="post"> 
 				<div class="form-group col-lg-2">
 					<label>คำนำหน้า</label>
-					<select name="" form="">
+					<select name="title" form="">
 					  <option value="">นาย</option>
 					  <option value="">นาง</option>
 					  <option value="">นางสาว</option>
@@ -17,22 +17,22 @@
 				</div>
 				<div class="form-group col-lg-5">
 					<label>ชื่อ</label>
-					<input type="text" name="" class="form-control" id="" value="" placeholder="ชื่อ" > 
+					<input type="text" name="firstname" class="form-control" id="" value="" placeholder="ชื่อ" > 
 				</div>
 				<div class="form-group col-lg-5">
 					<label>นามสกุล</label>
-					<input type="text" name="" class="form-control" id="" value="" placeholder="นามสกุล"> 
+					<input type="text" name="lastname" class="form-control" id="" value="" placeholder="นามสกุล"> 
 				</div>
 
 
 				<div class="form-group col-lg-12">
 					<label>ที่อยู่</label><br>
-					<textarea style="height:100px;width:100%;" rows="6" cols="50" placeholder="181/52 ...."></textarea>
+					<textarea name="address" style="height:100px;width:100%;" rows="6" cols="50" placeholder="181/52 ...."></textarea>
  
 				</div>
 				<div class="form-group col-lg-6">
 					<label>จังหวัด</label><br>
-					<select name="" form="" style="width:100%;" >
+					<select name="province" form="" style="width:100%;" >
 					  <option value="0">- เลือกจังหวัด -</option>
 
 
@@ -192,13 +192,14 @@
 					</select>
 				</div>
 				<div class="form-group col-lg-6">
-					<label>รหัสไปรษณีย์</label>
-					<input type="text" name="" class="form-control" id="" value="" placeholder="รหัสไปรษณีย์" > 
+					
+					<label>รหัสไปรษณี</label>
+					<input type="text" name="postal" class="form-control" id="" value="" placeholder="รหัสไปรษณี" >
 
 				</div>
 				<div class="form-group col-lg-6">
 					<label>เบอร์โทรศัพท์</label>
-					<input type="text" name="" class="form-control" id="" value="" placeholder="เบอร์โทรศัพท์" > 
+					<input type="text" name="phone" class="form-control" id="" value="" placeholder="เบอร์โทรศัพท์" > 
 				</div>
 				<div class="form-group col-lg-6">
 					<label>e-mail</label>
@@ -206,17 +207,17 @@
 				</div>
 				<div class="form-group col-lg-12">
 					<label>หน่วยงานต้นสังกัด</label>
-					<input type="text" name="" class="form-control" id="" value="" placeholder="" > 
+					<input type="text" name="department" class="form-control" id="" value="" placeholder="" > 
 				</div>
 				<div class="form-group col-lg-12">
 					<label>รายการแพ้อาหาร</label><br>
-					<textarea style="height:100px;width:100%;" rows="6" cols="50"></textarea>
+					<textarea name="food" style="height:100px;width:100%;" rows="6" cols="50"></textarea>
  
 				</div>
 				<hr>
 				<div class="form-group col-lg-12">
 					<label>รหัสผ่าน</label>
-					<input type="password" name="" class="form-control" id="" value="" min="6" placeholder="กรุณาใส่รหัสผ่านอย่างน้อย 6 ตัวอักษร" > 
+					<input type="password" name="password" class="form-control" id="" value="" min="6" placeholder="กรุณาใส่รหัสผ่านอย่างน้อย 6 ตัวอักษร" > 
 				</div>
 				<div class="form-group col-lg-12">
 					<label>ใส่รหัสผ่านอีกครั้ง</label>
