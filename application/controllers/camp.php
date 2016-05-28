@@ -61,6 +61,38 @@ class camp extends CI_Controller {
 		$this->load->view('register/content');
 		$this->load->view('home/foot');
 	}
+
+	public function menuDetail()
+	{
+		$this->load->helper('url');
+
+		$this->load->view('home/head');
+		$this->load->view('home/header');
+		$this->load->view('home/banner');
+		$this->load->view('detial/content');
+		$this->load->view('home/foot');
+	}
+
+	public function menuPlace()
+	{
+		$this->load->helper('url');
+
+		$this->load->view('home/head');
+		$this->load->view('home/header');
+		$this->load->view('home/banner');
+		$this->load->view('home/map');
+		$this->load->view('home/foot');
+	}
+	public function menuDate()
+	{
+		$this->load->helper('url');
+
+		$this->load->view('home/head');
+		$this->load->view('home/header');
+		$this->load->view('home/banner');
+		$this->load->view('register/content');
+		$this->load->view('home/foot');
+	}
 }
 
 /* End of file welcome.php */

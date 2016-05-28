@@ -3,13 +3,8 @@
                     <header class="header">
                 <div class="container">
                     <div class="col-12">
-<<<<<<< HEAD
-                    <div class="col-3 mb-11 logo-set">
-                        <div class="logo"><img src="<?php echo base_url(); ?>template/LogoNCIT.png" width="70%"/></div>
-=======
                     <div class="col-2 mb-11 logo-set">
-                        <div class="logo"><img src="<?php echo base_url(); ?>template/image/blacklogo.png" /></div>
->>>>>>> 6c38a9b215361a388c7506de65a14ce9ac7fecd0
+                        <div class="logo"><img src="<?php echo base_url(); ?>template/LogoNCIT.png" width="70%"/></div>
 
                     </div>
 
