@@ -2,8 +2,9 @@ Thohirah
 Thanyaboot
 Poottida
 apiwat
+<<<<<<< HEAD
 Aof
+=======
 Sudarat
-somsak
-FAH
-keerin
+>>>>>>> 6acadf845833975f145faaf54a13c04746cf5677
+Kanchit con lo
