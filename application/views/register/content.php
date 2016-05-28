@@ -192,8 +192,8 @@
 					</select>
 				</div>
 				<div class="form-group col-lg-6">
-					<label>รหัสไปรษณี</label>
-					<input type="text" name="" class="form-control" id="" value="" placeholder="รหัสไปรษณี" > 
+					<label>รหัสไปรษณีย์</label>
+					<input type="text" name="" class="form-control" id="" value="" placeholder="รหัสไปรษณีย์" > 
 
 				</div>
 				<div class="form-group col-lg-6">
