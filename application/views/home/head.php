@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>งานประชุมวิชาการระดับชาติ NCIT 2560</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+      <meta name="viewport" content="width=device-width,  user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
     <meta charset="utf-8" />
      <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
     <meta name="robots" content="index, follow" />
@@ -11,7 +11,7 @@
     <meta name="keywords" content="mz,mzcreatives,creatives,template,website,onepage,webdesign,portfolio,build website,themeforest" />
     <meta name="description" content="Now you can buy or use template from themeforest design by mzcreatives" />
     <meta property="og:title" content="One page website template for multipurpose website" />
-
+    
 
      <!---Common css---->
         <link href="<?php echo base_url(); ?>template/css/common.css" rel="stylesheet" type="text/css" />
