@@ -119,15 +119,25 @@ class camp extends CI_Controller {
 		 }
 		$query=$this->Model->getUser($username,$password);
 		foreach($query->result() as $row) {
+<<<<<<< HEAD
 			$data['result'] =$this->Model->getUserdatial($row->accountID);
+=======
+
+>>>>>>> e350f27a7678b755403d329444733cf5b6eb7c22
 			redirect('camp/user/'.$row->accountID, 'refresh');
 		 }
 
 		redirect('camp/login', 'refresh');
 		//$this->load->view('home/foot');
 	}
+<<<<<<< HEAD
 	public function user($id)
+=======
+	public function user($acID)
+>>>>>>> e350f27a7678b755403d329444733cf5b6eb7c22
 	{
+		if(!isset($acID))redirect('camp/login', 'refresh');
+		$this->load->model('Model');
 		
 		$this->load->helper('url');
 		$this->load->model('Model');
@@ -136,10 +146,14 @@ class camp extends CI_Controller {
 		$this->load->view('home/head');
 		$this->load->view('home/header');
 		//$this->load->view('home/banner');
-		
+		$data['result'] =$this->Model->getUserdatial($acID);
 
 		//$data['id'] = $acID ;
+<<<<<<< HEAD
 		$this->load->view('user/content',$query);
+=======
+		$this->load->view('user/content',$data);
+>>>>>>> e350f27a7678b755403d329444733cf5b6eb7c22
 		$this->load->view('home/foot');
 	}
 
