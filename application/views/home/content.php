@@ -70,7 +70,7 @@
                 
                     
                 <br>
-                <a href=""> <h4>รายงานผลรางวัล Best paper award</h4></a>
+                <a href="<?php echo site_url('camp/best'); ?>"> <h4>รายงานผลรางวัล Best paper award</h4></a>
                
             </div>
 
