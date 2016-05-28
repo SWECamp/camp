@@ -135,6 +135,24 @@ class camp extends CI_Controller {
 		$this->load->helper('url');
 		echo "admin";
 	}
+	public function submitRegister()
+	{
+		$this->load->helper('url');
+		$title = $_POST('title');
+		$firstname = $_POST('firstname');
+		$lastname = $_POST('lastname'); 
+		$address = $_POST('address');
+		$province = $_POST('province');
+		$postal = $_POST('postal');
+		$phone = $_POST('phone');
+		$email = $_POST('email');
+		$department = $_POST('department');
+		$food = $_POST('food');
+		$password = $_POST('password');
+		$artifect = 1;
+		$join = $_POST('');
+		$tour = $_POST('');
+	}
 }
 
 /* End of file welcome.php */
