@@ -1,4 +1,4 @@
-<section class="banner top" id="home" style="background-image:url(<?php echo base_url(); ?>template/image/banner1.jpg);">
+<section class="banner top" id="home" style="background-image:url(<?php echo base_url(); ?>template/image/banner1.jpg);>
         <div class="texture">
         <div class="container">
            <div class="col-5 mb-12 mb-center banner-box">
