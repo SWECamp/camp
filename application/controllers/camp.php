@@ -137,7 +137,16 @@ class camp extends CI_Controller {
 	public function admin()
 	{
 		$this->load->helper('url');
-		echo "admin";
+
+		$this->load->model('Model');
+		$query['data'] = $this->Model->getAccout();
+
+		$this->load->view('home/head');
+		$this->load->view('home/header');
+		$this->load->view('home/banner');
+		$this->load->view('admin/content');
+		$this->load->view('home/foot');
+
 	}
 	public function submitRegister()
 	{
@@ -171,6 +180,18 @@ class camp extends CI_Controller {
 		$query=$this->Model->setAccout($sql);
 
 		redirect('', 'refresh');
+	}
+
+	public function best()
+	{
+		$this->load->helper('url');
+
+		$this->load->view('home/head');
+		$this->load->view('home/header');
+		$this->load->view('home/banner');
+		$this->load->view('best/content');
+		$this->load->view('home/foot');
+
 	}
 }
 
