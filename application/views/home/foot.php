@@ -31,7 +31,8 @@
                     <div class="col-4 footer-logo" >    <img src="image/iislogo.png" style="" /></div> </div>
              </div>
                 !-->
-             <div class="text-center" >งานประชุมวิชาการระดับชาติ NCIT 2560 . <a href="http://facebook.com/" target="_blank"><i class="quickweb-icon-facebook"></i></a> <a href="http://twitter.com/" target="_blank"><i class="quickweb-icon-twitter"></i></a> </div>
+             <div class="text-center" >งานประชุมวิชาการระดับชาติ NCIT 2560 . <a href="http://facebook.com/" target="_blank"><i class="quickweb-icon-facebook"></i></a> <a href="http://twitter.com/" target="_blank"><i class="quickweb-icon-twitter"></i></a>
+            </div>
             </div>
             </div>
         </section>
