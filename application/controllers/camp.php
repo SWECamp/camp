@@ -120,23 +120,26 @@ class camp extends CI_Controller {
 		$query=$this->Model->getUser($username,$password);
 		foreach($query->result() as $row) {
 			$data['result'] =$this->Model->getUserdatial($row->accountID);
-			redirect('camp/user', $data);
+			redirect('camp/user/'.$row->accountID, 'refresh');
 		 }
 
 		redirect('camp/login', 'refresh');
 		//$this->load->view('home/foot');
 	}
-	public function user()
+	public function user($id)
 	{
 		
 		$this->load->helper('url');
+		$this->load->model('Model');
+		$query['data'] = $this->Model->getreUser($id);
+
 		$this->load->view('home/head');
 		$this->load->view('home/header');
 		//$this->load->view('home/banner');
 		
 
 		//$data['id'] = $acID ;
-		$this->load->view('user/content');
+		$this->load->view('user/content',$query);
 		$this->load->view('home/foot');
 	}
 
@@ -222,6 +225,38 @@ class camp extends CI_Controller {
 
 		$query=$this->Model->setReArtifact($id);
 		redirect('camp/admin', 'refresh');
+	}
+
+	public function reUser($id)
+	{
+
+		$this->load->model('Model');
+		$this->load->helper('url');
+		$title = $_POST['title'];
+		$firstname = $_POST['firstname'];
+		$lastname = $_POST['lastname']; 
+		$address = $_POST['address'];
+		$province = $_POST['province'];
+		$postal = $_POST['postal'];
+		$phone = $_POST['phone'];
+		$email = $_POST['email'];
+		$department = $_POST['department'];
+		$food = $_POST['food'];
+		$password = $_POST['password'];
+		$artifect = 1;
+		$join = $_POST['join'];
+		(isset($_POST['tour1']))?$tour1 = $_POST['tour1']:$tour1 = 0;
+		(isset($_POST['tour2']))?$tour2 = $_POST['tour2']:$tour2 = 0;
+		(isset($_POST['tour3']))?$tour3 = $_POST['tour3']:$tour3 = 0;
+		if($tour1==""&&$tour2==""&&$tour3==""){
+			$tour1 = 0;
+			$tour2 = 0;
+			$tour3 = 0;
+		}
+		$sql = "UPDATE `account` SET `title`='".$title."',`firstname`='".$firstname."',`lastname`='".$lastname."',`address`='".$address."',`province`='".$province."',`postalcode`='".$postal."',`phoneno`='".$phone."',`email`='".$email."',`department`='".$department."',`food`='".$food."',`password`='".$password."',`join`='".$join."',`tour1`='".$tour1."',`tour2`='".$tour2."',`tour3`='".$tour3."' WHERE `accountID` = ".$id;
+		$query=$this->Model->setReUser($sql);
+		//echo $sql;
+		redirect('camp/user/'.$id, 'refresh');
 	}
 }
 
