@@ -9,7 +9,7 @@
         	ผลงานวิชาการที่นําเสนอในการประชุม NCIT จะมีทั้งผลงาน วิจัยเชิงทฤษฎีและผลงานวิจัยเชิงประยุกต์
 บทความที่มีคุณภาพดีมากจะได้รับการเสนอให้พิจารณาทบทวนขยายผล เพื่อนำเสนอและตีพิมพ์ใน Journal of
 Information Science and Technology (JIST) และผลงานที่ดีเยี่ยมที่สุดจะมีการมอบรางวัล Best Paper Award
-        <br><br><br><small><a href="<?php echo site_url('/camp/login'); ?>">ขอเชิญผู้เข้าที่สนใจส่งผลงานเข้าประกวดชิงรางวัล Best Paper Award</a></small>
+        <br><br><br><small><a href="<?php echo site_url('/camp/register'); ?>">ขอเชิญผู้เข้าที่สนใจส่งผลงานเข้าประกวดชิงรางวัล Best Paper Award</a></small>
         </div>
         </div>
     </section>
