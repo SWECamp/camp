@@ -3,10 +3,26 @@
         <h1>แก้ไขข้อมูลส่วนตัว</h1>
         <div class="col-md-2">
         <br>
-        	
         </div>
 		<div class="col-md-8 text-left">
+			<hr> 
 			<?php foreach($data->result() as $row) { ?>
+
+
+			<?php  
+				$mainpay=0;
+				if($row->join == 1) $mainpay = 7000;
+				elseif($row->join == 2) $mainpay = 5000;
+
+				$price = $mainpay+($row->tour1*2000)+($row->tour2*1000)+($row->tour3*1000); ?>
+				<p class="text-center	">จำนวนเงินที่ต้องชำระ <font color="red" size="20px"> <?=$price?> </font> บาท
+					<br>
+					<?php if ($row->artifact == 0)echo '<font color="green" >ยืนยันการชำระเงินเเล้ว</font>'; 
+				else echo '<font color="red" >รอตรวจสอบการชำระเงิน</font>'; ?>	
+				</p>
+
+
+				<hr> 
 			<form action="<?php echo site_url('camp/reUser/'.$row->accountID)?>" method="post"> 
 				<div class="form-group col-lg-2">
 					<label>คำนำหน้า</label>
@@ -244,17 +260,7 @@
 					<label>ใส่รหัสผ่านอีกครั้ง</label>
 					<input type="password" name="" class="form-control" id="" value="<?php echo $row->password; ?>" min="6" placeholder="กรุณายืนยันรหัสผ่าน" > 
 				</div>
-				<?php  
-				$mainpay=0;
-				if($row->join == 1) $mainpay = 7000;
-				elseif($row->join == 2) $mainpay = 5000;
-
-				$price = $mainpay+($row->tour1*2000)+($row->tour2*1000)+($row->tour3*1000); ?>
-				<p class="text-center	">จำนวนเงินที่ต้องชำระ <font color="red" size="20px"> <?=$price?> </font> บาท
-					<br>
-					<?php if ($row->artifact == 0)echo '<font color="green" >ยืนยันการชำระเงินเเล้ว</font>'; 
-				else echo '<font color="red" >รอตรวจสอบการชำระเงิน</font>'; ?>	
-				</p>
+				
 				
 				<div class="form-group col-lg-12 text-center	">
 					<button type="submit" class="btn btn-primary">ยืนยัน</button>
