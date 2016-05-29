@@ -1,3 +1,9 @@
+<style type="text/css">
+.pinred{
+	color:red;
+	font-size:22px;
+}
+</style>
 <section class="choose-theme section-padding color-white"  id="about">
         <div class="container">
         <h1>ผู้ร่วมการประชุมวิชาการ</h1>
@@ -25,7 +31,7 @@
 				<hr> 
 			<form action="<?php echo site_url('camp/reUser/'.$row->accountID)?>" method="post"> 
 				<div class="form-group col-lg-2">
-					<label>คำนำหน้า</label>
+					<label>คำนำหน้า <font class="pinred">*</font></label>
 					<select name="title">
 					  <option value="1" <?php if($row->title == 1) echo "selected"; ?>>นาย</option>
 					  <option value="2" <?php if($row->title == 2) echo "selected"; ?>>นาง</option>
@@ -34,22 +40,22 @@
 					</select>
 				</div>
 				<div class="form-group col-lg-5">
-					<label>ชื่อ</label>
+					<label>ชื่อ <font class="pinred">*</font></label>
 					<input type="text" name="firstname" class="form-control" id="" value="<?php echo $row->firstname; ?>" placeholder="ชื่อ" > 
 				</div>
 				<div class="form-group col-lg-5">
-					<label>นามสกุล</label>
+					<label>นามสกุล <font class="pinred">*</font></label>
 					<input type="text" name="lastname" class="form-control" id="" value="<?php echo $row->lastname; ?>" placeholder="นามสกุล"> 
 				</div>
 
 
 				<div class="form-group col-lg-12">
-					<label>ที่อยู่</label><br>
+					<label>ที่อยู่ <font class="pinred">*</font></label><br>
 					<textarea name="address" style="height:100px;width:100%;" rows="6" cols="50" placeholder="<?php echo $row->address; ?>" ><?php echo $row->address; ?></textarea>
  
 				</div>
 				<div class="form-group col-lg-6">
-					<label>จังหวัด</label><br>
+					<label>จังหวัด <font class="pinred">*</font></label><br>
 					<select name="province" style="width:100%;" >
 					  <option value="0">- เลือกจังหวัด -</option>
 
@@ -211,20 +217,20 @@
 				</div>
 				<div class="form-group col-lg-6">
 					
-					<label>รหัสไปรษณีย์</label>
+					<label>รหัสไปรษณีย์ <font class="pinred">*</font></label>
 					<input type="text" name="postal" class="form-control" id="" value="<?php echo $row->postalcode; ?>" placeholder="รหัสไปรษณีย์" >
 
 				</div>
 				<div class="form-group col-lg-6">
-					<label>เบอร์โทรศัพท์</label>
+					<label>เบอร์โทรศัพท์ <font class="pinred">*</font></label>
 					<input type="text" name="phone" class="form-control" id="" value="<?php echo $row->phoneno; ?>" placeholder="เบอร์โทรศัพท์" > 
 				</div>
 				<div class="form-group col-lg-6">
-					<label>e-mail</label>
+					<label>e-mail <font class="pinred">*</font></label>
 					<input type="text" name="email" class="form-control" id="" value="<?php echo $row->email; ?>" placeholder="e-mail" > 
 				</div>
 				<div class="form-group col-lg-12">
-					<label>หน่วยงานต้นสังกัด</label>
+					<label>หน่วยงานต้นสังกัด <font class="pinred">*</font></label>
 					<input type="text" name="department" class="form-control" id="" value="<?php echo $row->department; ?>" placeholder="" > 
 				</div>
 				<div class="form-group col-lg-12">
@@ -233,7 +239,7 @@
  
 				</div>
 				<div class="form-group col-lg-12	">
-					<label>เลือกประเภทผู้เข้าร่วมประชุมวิชาการ</label>
+					<label>เลือกประเภทผู้เข้าร่วมประชุมวิชาการ <font class="pinred">*</font></label>
 					<select name="join" style="width:100%;" <?php if($row->artifact == 0) echo " disabled"; ?>>
 					  <option value="1" <?php if($row->join == 1) echo "selected"; ?>>ผู้นำเสนอผลงาน - <font color="red">ค่าธรรมเนียม 7,000 บาท </font></option>
 					  <option value="2" <?php if($row->join == 2) echo "selected"; ?>>ผู้สนใจเข้าร่วมงาน - <font color="red">ค่าธรรมเนียม 5,000 บาท</font></option>
@@ -241,7 +247,7 @@
 					</select>
 				</div>
 				<div class="form-group col-lg-12		">
-					<label> เข้าร่วมกิจกรรมท่องเที่ยว</label><br>
+					<label> เข้าร่วมกิจกรรมท่องเที่ยว <font class="pinred">*</font></label><br>
 					<select name="tour" style="width:100%;" <?php if($row->artifact == 0) echo " disabled"; ?>>
 						<option value="0">- เลือกเข้าร่วมกิจกรรม -</option>
 					  <option value="1" <?php if($row->tour1 == 1) echo "selected"; ?>>ชม โลมาสีชมพู ดำน้ำทะเลขนอม-หมู่เกาะทะเลใต้เกาะราบ หรือ เกาะแตน
@@ -262,11 +268,11 @@
 				
 				<hr>
 				<div class="form-group col-lg-12">
-					<label>รหัสผ่าน</label>
+					<label>รหัสผ่าน <font class="pinred">*</font></label>
 					<input type="password" name="password" class="form-control" id="" value="<?php echo $row->password; ?>" min="6" placeholder="กรุณาใส่รหัสผ่านอย่างน้อย 6 ตัวอักษร" > 
 				</div>
 				<div class="form-group col-lg-12">
-					<label>ใส่รหัสผ่านอีกครั้ง</label>
+					<label>ใส่รหัสผ่านอีกครั้ง <font class="pinred">*</font></label>
 					<input type="password" name="" class="form-control" id="" value="<?php echo $row->password; ?>" min="6" placeholder="กรุณายืนยันรหัสผ่าน" > 
 				</div>
 				
