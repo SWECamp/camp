@@ -1,6 +1,6 @@
 <section class="choose-theme section-padding color-white"  id="about">
         <div class="container">
-        	<h2 class="text-left">กิจกรรมท่องเที่ยว</h2>
+        	<h2 class="text-center">กิจกรรมท่องเที่ยว</h2><br><br><br>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style=" margin-bottom: 100px; ">
                         <div class="col-md-6 text-center       ">
                                 <img src="<?php echo base_url(); ?>template/image/tm3.jpg" width="70%" class="img-circle      " alt="Image">
