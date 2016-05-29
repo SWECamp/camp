@@ -173,8 +173,8 @@ Information Science and Technology (JIST)
             </div>
             <div class="col-md-4" style=" padding-top: 15px; background-color: #FFF; ">
                 <img src="<?php echo base_url(); ?>template/image/pic2.jpg" style="margin-bottom:20px" width="100%">
-                <p style="font-size:20px">
-                กิจกรรมการท่องเที่ยว</p>
+                <p style="font-size:20px"><a href="<?php echo site_url('/camp/tourac'); ?>">กิจกรรมการท่องเที่ยว</a>
+                </p>
             </div>
             <div class="col-md-4" style=" padding-top: 15px; background-color: #FFF; ">
                 <img src="<?php echo base_url(); ?>template/image/pic3.png" style="margin-bottom:20px" width="100%">
