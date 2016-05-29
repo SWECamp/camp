@@ -219,8 +219,8 @@
 				<div class="form-group col-lg-12	">
 					<label>เลือกประเภทผู้เข้าร่วมประชุมวิชาการ</label>
 					<select name="join" style="width:100%;" <?php if($row->artifact == 0) echo " disabled"; ?>>
-					  <option value="1" <?php if($row->join == 1) echo "selected"; ?>>ผู้นำเสนอผลงาน</option>
-					  <option value="2" <?php if($row->join == 2) echo "selected"; ?>>ผู้สนใจเข้าร่วมงาน</option>
+					  <option value="1" <?php if($row->join == 1) echo "selected"; ?>>ผู้นำเสนอผลงาน - ค่าธรรมเนียม 7,000 บาท</option>
+					  <option value="2" <?php if($row->join == 2) echo "selected"; ?>>ผู้สนใจเข้าร่วมงาน - ค่าธรรมเนียม 5,000 บาท</option>
 
 					</select>
 				</div>
