@@ -193,7 +193,7 @@ class camp extends CI_Controller {
 		// 	$tour3 = 0;
 		// }
 
-		
+
 		$tour = $_POST['tour'];
 		if ($tour == 1) {
 			$tour1 = 1;
@@ -278,7 +278,7 @@ class camp extends CI_Controller {
 		// 	$tour2 = 0;
 		// 	$tour3 = 0;
 		// }
-		echo $_POST['tour'];
+		//echo $_POST['tour'];
 		if($_POST['tour']==1)
 		{
 			$tour1 = 1;
@@ -304,7 +304,7 @@ class camp extends CI_Controller {
 		$sql = "UPDATE `account` SET `title`='".$title."',`firstname`='".$firstname."',`lastname`='".$lastname."',`address`='".$address."',`province`='".$province."',`postalcode`='".$postal."',`phoneno`='".$phone."',`email`='".$email."',`department`='".$department."',`food`='".$food."',`password`='".$password."',`join`='".$join."',`tour1`='".$tour1."',`tour2`='".$tour2."',`tour3`='".$tour3."' WHERE `accountID` = ".$id;
 		$query=$this->Model->setReUser($sql);
 		//echo $sql;
-		//redirect('camp/user/'.$id, 'refresh');
+		redirect('camp/user/'.$id, 'refresh');
 	}
 
 	public function testMail(){

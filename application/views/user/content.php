@@ -45,7 +45,7 @@
 
 				<div class="form-group col-lg-12">
 					<label>ที่อยู่</label><br>
-					<textarea name="address" style="height:100px;width:100%;" rows="6" cols="50" placeholder="<?php echo $row->address; ?>" value="<?php echo $row->address; ?>"></textarea>
+					<textarea name="address" style="height:100px;width:100%;" rows="6" cols="50" placeholder="<?php echo $row->address; ?>" ><?php echo $row->address; ?></textarea>
  
 				</div>
 				<div class="form-group col-lg-6">
@@ -229,7 +229,7 @@
 				</div>
 				<div class="form-group col-lg-12">
 					<label>รายการแพ้อาหาร</label><br>
-					<textarea name="food" style="height:100px;width:100%;" rows="6" cols="50" placeholder="<?php echo $row->food; ?>" value="<?php echo $row->food; ?>"></textarea>
+					<textarea name="food" style="height:100px;width:100%;" rows="6" cols="50" placeholder="<?php echo $row->food; ?>" ><?php echo $row->food; ?></textarea>
  
 				</div>
 				<div class="form-group col-lg-12	">
@@ -242,11 +242,20 @@
 				</div>
 				<div class="form-group col-lg-12		">
 					<label> เข้าร่วมกิจกรรมท่องเที่ยว</label><br>
+					<select name="tour" style="width:100%;" <?php if($row->artifact == 0) echo " disabled"; ?>>
+						<option value="0">- เลือกเข้าร่วมกิจกรรม -</option>
+					  <option value="1" <?php if($row->tour1 == 1) echo "selected"; ?>>ชม โลมาสีชมพู ดำน้ำทะเลขนอม-หมู่เกาะทะเลใต้เกาะราบ หรือ เกาะแตน
+- <small>ค่าธรรมเนียม 2,000 บาท</small></option>
+					  <option value="2" <?php if($row->tour2 == 1) echo "selected"; ?>>เขาหลวง น้ำตกกรุงชิง - <small>ค่าธรรมเนียม 1,000 บาท</small> </option>
+					  <option value="3" <?php if($row->tour3 == 1) echo "selected"; ?>>สัมผัสเสน่ห์เมืองนครศรีธรรมราช  - <small>ค่าธรรมเนียม 1,000</small>  </option>
+					  <option value="4" <?php if($row->tour1 == 0&&$row->tour2 == 0&&$row->tour3 == 0) echo "selected"; ?>>ไม่เข้าร่วมกิจรรม</option>
+					</select>
+<!-- 
 					<input type="checkbox" name="tour1" value="1" <?php if($row->tour1 == 1) echo "checked"; if($row->artifact == 0) echo " disabled"; ?>> ชม โลมาสีชมพู ดำน้ำทะเลขนอม-หมู่เกาะทะเลใต้เกาะราบ หรือ เกาะแตน
 <small>จ่ายเงินเพิ่ม 2,000</small> <br>
 					<input type="checkbox" name="tour2" value="1" <?php if($row->tour2 == 1) echo "checked"; if($row->artifact == 0) echo " disabled"; ?>> เขาหลวง น้ำตกกรุงชิง <small>จ่ายเงินเพิ่ม 1,000</small>  <BR>
 					<input type="checkbox" name="tour3" value="1" <?php if($row->tour3 == 1) echo "checked"; if($row->artifact == 0) echo " disabled"; ?>> สัมผัสเสน่ห์เมืองนครศรีธรรมราช <small>จ่ายเงินเพิ่ม 1,000</small>  <br>
-				</div>
+ -->				</div>
 
 
 
