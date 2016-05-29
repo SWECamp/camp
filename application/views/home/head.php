@@ -33,6 +33,8 @@
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="<?php echo base_url(); ?>template/bootstrap/css/bootstrap.min.css" integrity="" crossorigin="anonymous">
 
+
+<link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 <!-- Optional theme -->
 <link rel="stylesheet" href="<?php echo base_url(); ?>template/bootstrap/css/bootstrap-theme.min.css" integrity="" crossorigin="anonymous">
 
