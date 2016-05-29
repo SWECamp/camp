@@ -59,11 +59,19 @@
     </script>
     
 <!-- Latest compiled and minified JavaScript -->
-<script src="<?php echo base_url(); ?>template/bootstrap/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
+    
 
-        <link rel="stylesheet" href="<?php echo base_url(); ?>template/assets/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="<?php echo base_url(); ?>template/assets/css/form-elements.css">
-        <link rel="stylesheet" href="<?php echo base_url(); ?>template/assets/css/style.css">
-    <script src="<?php echo base_url(); ?>template/bootstrap/js/validator.min.js"></script>
+
+   <script src="<?php echo base_url(); ?>template/bootstrap/js/bootstrap.min.js" integrity="" crossorigin="anonymous"></script>
+    
+    <script src="<?php echo base_url(); ?>template/js/jquery-ui.js"></script>
+
+    <script src="<?php echo base_url(); ?>template/js/slider.js"></script>
+    <script src="<?php echo base_url(); ?>template/js/plugin.js"></script>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/language/th_TH.js"></script>
 </body>
 </html>

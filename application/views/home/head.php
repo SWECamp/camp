@@ -29,14 +29,15 @@
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900' rel='stylesheet' type='text/css'/>
 
 
-    <script src="<?php echo base_url(); ?>template/js/jquery-ui.js"></script>
-    <script src="<?php echo base_url(); ?>template/js/jquery-1.11.3.min.js"></script>
-    <script src="<?php echo base_url(); ?>template/js/slider.js"></script>
-    <script src="<?php echo base_url(); ?>template/js/plugin.js"></script>
+   
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="<?php echo base_url(); ?>template/bootstrap/css/bootstrap.min.css" integrity="" crossorigin="anonymous">
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="<?php echo base_url(); ?>template/bootstrap/css/bootstrap-theme.min.css" integrity="" crossorigin="anonymous">
 
+        <link rel="stylesheet" href="<?php echo base_url(); ?>template/assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>template/assets/css/form-elements.css">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>template/assets/css/style.css">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css" rel="stylesheet">
 </head>

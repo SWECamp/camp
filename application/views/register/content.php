@@ -5,7 +5,10 @@
         	
         </div>
 		<div class="col-md-8 text-left">
-			<form action="<?php echo site_url('camp/submitRegister')?>" method="post"> 
+			<form id="registrationForm" action="<?php echo site_url('camp/submitRegister')?>" method="post"  data-fv-framework="bootstrap"
+    data-fv-icon-valid="glyphicon glyphicon-ok"
+    data-fv-icon-invalid="glyphicon glyphicon-remove"
+    data-fv-icon-validating="glyphicon glyphicon-refresh"> 
 				<div class="form-group col-lg-2">
 					<label>คำนำหน้า</label>
 					<select name="title">
@@ -17,7 +20,7 @@
 				</div>
 				<div class="form-group col-lg-5">
 					<label>ชื่อ</label>
-					<input type="text" name="firstname" class="form-control" id="" value="" placeholder="ชื่อ" > 
+					<input type="text" name="firstname" class="form-control" id="" value="" placeholder="ชื่อ"  data-bv-notempty> 
 				</div>
 				<div class="form-group col-lg-5">
 					<label>นามสกุล</label>
@@ -255,3 +258,10 @@
             
         </div>
     </section>
+
+
+<script>
+$(document).ready(function() {
+    $('#registrationForm').formValidation();
+});
+</script>
