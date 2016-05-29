@@ -1,7 +1,7 @@
 
 <section class="map color-light-white" id="contact" style="padding-top: 30px;">
   <h2>ข้อมูลสถานที่</h2>
-  <h4>ตึกนวัตกรรม 222 ต.ไทยบุรี อ.ท่าศาลา จ.นครศรีธรรมราช 80160</h4><br><BR>
+  <h4>อาคารนวัตกรรม 222 ต.ไทยบุรี อ.ท่าศาลา จ.นครศรีธรรมราช 80160</h4><br><BR>
   <img src="<?php echo base_url(); ?>template/image/map1.jpg" style="margin-bottom:20px">
 
 </section>
