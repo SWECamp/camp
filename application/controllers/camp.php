@@ -279,21 +279,23 @@ class camp extends CI_Controller {
 		// 	$tour3 = 0;
 		// }
 		//echo $_POST['tour'];
-		if($_POST['tour']==1)
-		{
-			$tour1 = 1;
-		 	$tour2 = 0;
-		 	$tour3 = 0;
-		}elseif($_POST['tour']==2)
-		{
-			$tour1 = 0;
-		 	$tour2 = 1;
-		 	$tour3 = 0;
-		}elseif($_POST['tour']==3)
-		{
-			$tour1 = 0;
-		 	$tour2 = 0;
-		 	$tour3 = 1;
+		if(!empty($_POST['tour'])){
+			if($_POST['tour']==1)
+			{
+				$tour1 = 1;
+			 	$tour2 = 0;
+			 	$tour3 = 0;
+			}elseif($_POST['tour']==2)
+			{
+				$tour1 = 0;
+			 	$tour2 = 1;
+			 	$tour3 = 0;
+			}elseif($_POST['tour']==3)
+			{
+				$tour1 = 0;
+			 	$tour2 = 0;
+			 	$tour3 = 1;
+			}
 		}
 		else
 		{
