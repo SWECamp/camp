@@ -288,6 +288,30 @@ class camp extends CI_Controller {
 		$this->load->view('tour/content');
 		$this->load->view('home/foot');
 	}
+
+	public function location()
+	{
+		$this->load->helper('url');
+
+		$this->load->view('home/head');
+		$this->load->view('home/header');
+		//$this->load->view('home/banner');
+		$this->load->view('location/content');
+		$this->load->view('home/foot');
+
+	}
+
+	public function search()
+	{
+		$this->load->helper('url');
+
+		$this->load->view('home/head');
+		$this->load->view('home/header');
+		//$this->load->view('home/banner');
+		$this->load->view('alluser/content');
+		$this->load->view('home/foot');
+
+	}
 }
 
 /* End of file welcome.php */
