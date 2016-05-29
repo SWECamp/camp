@@ -217,17 +217,22 @@
 				<div class="form-group col-lg-12	">
 					<label>เลือกประเภทผู้เข้าร่วมประชุมวิชาการ</label>
 					<select name="join" style="width:100%;" >
-					  <option value="1">ผู้นำเสนอผลงาน</option>
-					  <option value="2">ผู้สนใจเข้าร่วมงาน</option>
+					  <option value="1">ผู้นำเสนอผลงาน - ค่าธรรมเนียม 7,000 บาท</option>
+					  <option value="2">ผู้สนใจเข้าร่วมงาน - ค่าธรรมเนียม 5,000 บาท</option>
 
 					</select>
 				</div>
 				<div class="form-group col-lg-12		">
 					<label> เข้าร่วมกิจกรรมท่องเที่ยว</label><br>
-					<input type="checkbox" name="tour1" value="1"> ชม โลมาสีชมพู ดำน้ำทะเลขนอม-หมู่เกาะทะเลใต้เกาะราบ หรือ เกาะแตน
-<small>จ่ายเงินเพิ่ม 2,000</small> <br>
-					<input type="checkbox" name="tour2" value="1"> เขาหลวง น้ำตกกรุงชิง <small>จ่ายเงินเพิ่ม 1,000</small>  <BR>
-					<input type="checkbox" name="tour3" value="1"> สัมผัสเสน่ห์เมืองนครศรีธรรมราช <small>จ่ายเงินเพิ่ม 1,000</small>  <br>
+					<select name="tour" style="width:100%;" >
+						<option value="0">- เลือกเข้าร่วมกิจกรรม -</option>
+					  <option value="1">ชม โลมาสีชมพู ดำน้ำทะเลขนอม-หมู่เกาะทะเลใต้เกาะราบ หรือ เกาะแตน
+- <small>ค่าธรรมเนียม 2,000 บาท</small></option>
+					  <option value="2">เขาหลวง น้ำตกกรุงชิง - <small>ค่าธรรมเนียม 1,000 บาท</small> </option>
+					  <option value="3">สัมผัสเสน่ห์เมืองนครศรีธรรมราช  - <small>ค่าธรรมเนียม 1,000</small>  </option>
+					  <option value="4">ไม่เข้าร่วมกิจรรม</option>
+					</select>
+
 				</div>
 
 

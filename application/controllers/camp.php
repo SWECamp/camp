@@ -184,10 +184,33 @@ class camp extends CI_Controller {
 		$password = $_POST['password'];
 		$artifect = 1;
 		$join = $_POST['join'];
-		(isset($_POST['tour1']))?$tour1 = $_POST['tour1']:$tour1 = 0;
-		(isset($_POST['tour2']))?$tour2 = $_POST['tour2']:$tour2 = 0;
-		(isset($_POST['tour3']))?$tour3 = $_POST['tour3']:$tour3 = 0;
-		if($tour1==""&&$tour2==""&&$tour3==""){
+		// (isset($_POST['tour1']))?$tour1 = $_POST['tour1']:$tour1 = 0;
+		// (isset($_POST['tour2']))?$tour2 = $_POST['tour2']:$tour2 = 0;
+		// (isset($_POST['tour3']))?$tour3 = $_POST['tour3']:$tour3 = 0;
+		// if($tour1==""&&$tour2==""&&$tour3==""){
+		// 	$tour1 = 0;
+		// 	$tour2 = 0;
+		// 	$tour3 = 0;
+		// }
+
+		
+		$tour = $_POST['tour'];
+		if ($tour == 1) {
+			$tour1 = 1;
+			$tour2 = 0;
+			$tour3 = 0;
+		}
+		elseif ($tour == 2) {
+			$tour1 = 0;
+			$tour2 = 1;
+			$tour3 = 0;
+		}
+		elseif ($tour == 3) {
+			$tour1 = 0;
+			$tour2 = 0;
+			$tour3 = 1;
+		}
+		else {
 			$tour1 = 0;
 			$tour2 = 0;
 			$tour3 = 0;
@@ -247,18 +270,41 @@ class camp extends CI_Controller {
 		$artifect = 1;
 		//$join = $_POST['join'];
 		(isset($_POST['join']))?$join = $_POST['join']:$join = 1;
-		(isset($_POST['tour1']))?$tour1 = $_POST['tour1']:$tour1 = 0;
-		(isset($_POST['tour2']))?$tour2 = $_POST['tour2']:$tour2 = 0;
-		(isset($_POST['tour3']))?$tour3 = $_POST['tour3']:$tour3 = 0;
-		if($tour1==""&&$tour2==""&&$tour3==""){
+		// (isset($_POST['tour1']))?$tour1 = $_POST['tour1']:$tour1 = 0;
+		// (isset($_POST['tour2']))?$tour2 = $_POST['tour2']:$tour2 = 0;
+		// (isset($_POST['tour3']))?$tour3 = $_POST['tour3']:$tour3 = 0;
+		// if($tour1==""&&$tour2==""&&$tour3==""){
+		// 	$tour1 = 0;
+		// 	$tour2 = 0;
+		// 	$tour3 = 0;
+		// }
+		echo $_POST['tour'];
+		if($_POST['tour']==1)
+		{
+			$tour1 = 1;
+		 	$tour2 = 0;
+		 	$tour3 = 0;
+		}elseif($_POST['tour']==2)
+		{
 			$tour1 = 0;
-			$tour2 = 0;
-			$tour3 = 0;
+		 	$tour2 = 1;
+		 	$tour3 = 0;
+		}elseif($_POST['tour']==3)
+		{
+			$tour1 = 0;
+		 	$tour2 = 0;
+		 	$tour3 = 1;
+		}
+		else
+		{
+			$tour1 = 0;
+		 	$tour2 = 0;
+		 	$tour3 = 0;
 		}
 		$sql = "UPDATE `account` SET `title`='".$title."',`firstname`='".$firstname."',`lastname`='".$lastname."',`address`='".$address."',`province`='".$province."',`postalcode`='".$postal."',`phoneno`='".$phone."',`email`='".$email."',`department`='".$department."',`food`='".$food."',`password`='".$password."',`join`='".$join."',`tour1`='".$tour1."',`tour2`='".$tour2."',`tour3`='".$tour3."' WHERE `accountID` = ".$id;
 		$query=$this->Model->setReUser($sql);
 		//echo $sql;
-		redirect('camp/user/'.$id, 'refresh');
+		//redirect('camp/user/'.$id, 'refresh');
 	}
 
 	public function testMail(){
