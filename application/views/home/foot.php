@@ -58,5 +58,21 @@
 
         });
     </script>
+    
+<!-- Latest compiled and minified JavaScript -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
+    
+
+
+   <script src="<?php echo base_url(); ?>template/bootstrap/js/bootstrap.min.js" integrity="" crossorigin="anonymous"></script>
+    
+    <script src="<?php echo base_url(); ?>template/js/jquery-ui.js"></script>
+
+    <script src="<?php echo base_url(); ?>template/js/slider.js"></script>
+    <script src="<?php echo base_url(); ?>template/js/plugin.js"></script>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/language/th_TH.js"></script>
 </body>
 </html>

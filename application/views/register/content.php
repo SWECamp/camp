@@ -5,7 +5,10 @@
         	
         </div>
 		<div class="col-md-8 text-left">
-			<form action="" method="post"> 
+			<form id="registrationForm" action="<?php echo site_url('camp/submitRegister')?>" method="post"  data-fv-framework="bootstrap"
+    data-fv-icon-valid="glyphicon glyphicon-ok"
+    data-fv-icon-invalid="glyphicon glyphicon-remove"
+    data-fv-icon-validating="glyphicon glyphicon-refresh"> 
 				<div class="form-group col-lg-2">
 <<<<<<< HEAD
 					<label>คำนำหน้า</label><br>
@@ -13,10 +16,16 @@
 =======
 					<label>คำนำหน้า</label>
 					<select name="title">
+<<<<<<< HEAD
 >>>>>>> 097a89874cd1401f6010b05f0076322308cbf471
 					  <option value="">นาย</option>
 					  <option value="">นาง</option>
 					  <option value="">นางสาว</option>
+=======
+					  <option value="1">นาย</option>
+					  <option value="2">นาง</option>
+					  <option value="3">นางสาว</option>
+>>>>>>> 8970a576c3a4aa830a681c79d5bdf51095e17556
 
 					</select>
 				</div>
@@ -30,7 +39,7 @@
 					<input type="text" name="" class="form-control" id="" value="" placeholder="นามสกุล"> 
 =======
 					<label>ชื่อ</label>
-					<input type="text" name="firstname" class="form-control" id="" value="" placeholder="ชื่อ" > 
+					<input type="text" name="firstname" class="form-control" id="" value="" placeholder="ชื่อ"  data-bv-notempty> 
 				</div>
 				<div class="form-group col-lg-5">
 					<label>นามสกุล</label>
@@ -232,8 +241,8 @@
 					<textarea style="height:100px;width:100%;" rows="6" cols="50"></textarea>
 =======
 					
-					<label>รหัสไปรษณี</label>
-					<input type="text" name="postal" class="form-control" id="" value="" placeholder="รหัสไปรษณี" >
+					<label>รหัสไปรษณีย์</label>
+					<input type="text" name="postal" class="form-control" id="" value="" placeholder="รหัสไปรษณีย์" >
 
 				</div>
 				<div class="form-group col-lg-6">
@@ -242,7 +251,7 @@
 				</div>
 				<div class="form-group col-lg-6">
 					<label>e-mail</label>
-					<input type="text" name="" class="form-control" id="" value="" placeholder="e-mail" > 
+					<input type="text" name="email" class="form-control" id="" value="" placeholder="e-mail" > 
 				</div>
 				<div class="form-group col-lg-12">
 					<label>หน่วยงานต้นสังกัด</label>
@@ -284,11 +293,16 @@
 >>>>>>> 097a89874cd1401f6010b05f0076322308cbf471
 				</div>
 				<div class="form-group col-lg-12">
+<<<<<<< HEAD
 					<label>ใส่รหัสผ่านอีกครั้ง</label><br>
 					<input type="password" name="" class="form-control" id="" value="" min="6" placeholder="กรุณายื่นยันรหัสผ่าน" > 
+=======
+					<label>ใส่รหัสผ่านอีกครั้ง</label>
+					<input type="password" name="" class="form-control" id="" value="" min="6" placeholder="กรุณายืนยันรหัสผ่าน" > 
+>>>>>>> 8970a576c3a4aa830a681c79d5bdf51095e17556
 				</div>
 				<div class="form-group col-lg-12 text-center	">
-					<button type="button" class="btn btn-primary">ยืนยัน</button>
+					<button type="submit" class="btn btn-primary">ยืนยัน</button>
 				</div>
 
 				
@@ -300,3 +314,10 @@
             
         </div>
     </section>
+
+
+<script>
+$(document).ready(function() {
+    $('#registrationForm').formValidation();
+});
+</script>
