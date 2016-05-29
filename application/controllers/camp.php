@@ -275,6 +275,12 @@ class camp extends CI_Controller {
 			echo "Email Can Not Send.";
 		}
 	}
+
+	public function tourac()
+	{
+		$this->load->model('Model');
+		$this->load->helper('url');
+	}
 }
 
 /* End of file welcome.php */
