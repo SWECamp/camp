@@ -46,7 +46,7 @@ class Model extends CI_Model {
 	public function getAccout()
 	{
 		$this->load->database();
-		$sql = "SELECT * FROM `account` WHERE `artifact` = 1";
+		$sql = "SELECT * FROM `account` order by `artifact` desc";
 		
 		$tt = $this->db->query($sql);
 		//return $query->result(); เอาไปเฉพาะรีซอล
@@ -78,6 +78,13 @@ class Model extends CI_Model {
 	public function setReUser($s){
 		$this->load->database();
 		$this->db->query($s);
+	}
+
+	public function getlastid(){
+		$this->load->database();
+		$sql = "SELECT * FROM `account` order by `accountID` desc limit 1";
+		$q = $this->db->query($sql);
+		return $q;
 	}
 	
 }
