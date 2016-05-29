@@ -134,7 +134,7 @@ class camp extends CI_Controller {
 		$query['data'] = $this->Model->getreUser($id);
 
 		$this->load->view('home/head');
-		$this->load->view('home/header');
+		$this->load->view('user/header');
 		//$this->load->view('home/banner');
 		$this->load->view('user/content',$query);
 		$this->load->view('home/foot');
@@ -148,7 +148,7 @@ class camp extends CI_Controller {
 		$query['data'] = $this->Model->getAccout();
 
 		$this->load->view('home/head');
-		$this->load->view('home/header');
+		$this->load->view('user/header');
 		//$this->load->view('home/banner');
 		$this->load->view('admin/content',$query);
 		$this->load->view('home/foot');
@@ -194,12 +194,16 @@ class camp extends CI_Controller {
 		}
 
 		$sql = "INSERT INTO `account`(`accountID`, `title`, `firstname`, `lastname`, `address`, `province`, `postalcode`, `phoneno`, `email`, `department`, `food`, `password`, `artifact`, `join`, `tour1`, `tour2`, `tour3`) VALUES (null,'".$title."','".$firstname."','".$lastname."','".$address."','".$province."','".$postal."','".$phone."','".$email."','".$department."','".$food."','".$password."','".$artifect."','".$join."','".$tour1."','".$tour2."','".$tour3."')";
-		echo $sql;
+
 		$this->load->model('Model');
+		echo "บันทึกสำเร็จ";
+		$this->Model->setAccout($sql);
 
-		$query=$this->Model->setAccout($sql);
-
-		redirect('', 'refresh');
+		$query=$this->Model->getlastid();
+		foreach ($query->result() as $value) {
+			redirect('camp/user/'.$value->accountID, 'refresh');
+		}
+		//redirect('camp/user', 'refresh');
 	}
 
 	public function best()
@@ -254,6 +258,28 @@ class camp extends CI_Controller {
 		$query=$this->Model->setReUser($sql);
 		//echo $sql;
 		redirect('camp/user/'.$id, 'refresh');
+	}
+
+	public function testMail(){
+		$strTo = "pk.prateep@gmail.com";
+		$strSubject = "Test Send Email";
+		$strHeader = "From: webmaster@thaicreate.com";
+		$strMessage = "My Body & My Description";
+		$flgSend = mail($strTo,$strSubject,$strMessage,$strHeader);  // @ = No Show Error //
+		if($flgSend)
+		{
+			echo "Email Sending.";
+		}
+		else
+		{
+			echo "Email Can Not Send.";
+		}
+	}
+
+	public function tourac()
+	{
+		$this->load->model('Model');
+		$this->load->helper('url');
 	}
 }
 

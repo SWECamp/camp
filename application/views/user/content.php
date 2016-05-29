@@ -1,6 +1,6 @@
 <section class="choose-theme section-padding color-white"  id="about">
         <div class="container">
-        <h1>สมัครเข้าร่วมการประชุม</h1>
+        <h1>แก้ไขข้อมูลส่วนตัว</h1>
         <div class="col-md-2">
         <br>
         	
@@ -218,7 +218,7 @@
 				</div>
 				<div class="form-group col-lg-12	">
 					<label>เลือกประเภทผู้เข้าร่วมประชุมวิชาการ</label>
-					<select name="join" style="width:100%;" >
+					<select name="join" style="width:100%;" <?php if($row->artifact == 0) echo " disabled"; ?>>
 					  <option value="1" <?php if($row->join == 1) echo "selected"; ?>>ผู้นำเสนอผลงาน</option>
 					  <option value="2" <?php if($row->join == 2) echo "selected"; ?>>ผู้สนใจเข้าร่วมงาน</option>
 
@@ -226,10 +226,10 @@
 				</div>
 				<div class="form-group col-lg-12		">
 					<label> เข้าร่วมกิจกรรมท่องเที่ยว</label><br>
-					<input type="checkbox" name="tour1" value="1" <?php if($row->tour1 == 1) echo "checked"; ?>> ชม โลมาสีชมพู ดำน้ำทะเลขนอม-หมู่เกาะทะเลใต้เกาะราบ หรือ เกาะแตน
+					<input type="checkbox" name="tour1" value="1" <?php if($row->tour1 == 1) echo "checked"; if($row->artifact == 0) echo " disabled"; ?>> ชม โลมาสีชมพู ดำน้ำทะเลขนอม-หมู่เกาะทะเลใต้เกาะราบ หรือ เกาะแตน
 <small>จ่ายเงินเพิ่ม 2,000</small> <br>
-					<input type="checkbox" name="tour2" value="1" <?php if($row->tour2 == 1) echo "checked"; ?>> เขาหลวง น้ำตกกรุงชิง <small>จ่ายเงินเพิ่ม 1,000</small>  <BR>
-					<input type="checkbox" name="tour3" value="1" <?php if($row->tour3 == 1) echo "checked"; ?>> สัมผัสเสน่ห์เมืองนครศรีธรรมราช <small>จ่ายเงินเพิ่ม 1,000</small>  <br>
+					<input type="checkbox" name="tour2" value="1" <?php if($row->tour2 == 1) echo "checked"; if($row->artifact == 0) echo " disabled"; ?>> เขาหลวง น้ำตกกรุงชิง <small>จ่ายเงินเพิ่ม 1,000</small>  <BR>
+					<input type="checkbox" name="tour3" value="1" <?php if($row->tour3 == 1) echo "checked"; if($row->artifact == 0) echo " disabled"; ?>> สัมผัสเสน่ห์เมืองนครศรีธรรมราช <small>จ่ายเงินเพิ่ม 1,000</small>  <br>
 				</div>
 
 

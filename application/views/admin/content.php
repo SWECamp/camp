@@ -20,7 +20,14 @@
                     <td><?php echo $row->firstname; ?></td>
                     <td><?php echo $row->lastname; ?></td>
                     <td><?php echo $row->email; ?></td>
-                    <td><a href="<?php echo site_url('camp/reArtifact/'.$row->accountID); ?>">ยืนยัน</a></td>
+                    <td><?php 
+                        if($row->artifact == 1){
+                            echo "<a href='".site_url('camp/reArtifact/'.$row->accountID)."'>ยืนยัน</a>";
+                        }else{
+                            echo "ยืนยันแล้ว";
+                        }
+                     ?></td>
+                    <!-- echo "<a href='".site_url('camp/reArtifact/'.$row->accountID)."'>ยืนยัน</a>":echo ""; -->
         </tr>
         <?php }
          ?>
