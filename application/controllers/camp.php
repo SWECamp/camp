@@ -245,7 +245,8 @@ class camp extends CI_Controller {
 		$food = $_POST['food'];
 		$password = $_POST['password'];
 		$artifect = 1;
-		$join = $_POST['join'];
+		//$join = $_POST['join'];
+		(isset($_POST['join']))?$join = $_POST['join']:$join = 1;
 		(isset($_POST['tour1']))?$tour1 = $_POST['tour1']:$tour1 = 0;
 		(isset($_POST['tour2']))?$tour2 = $_POST['tour2']:$tour2 = 0;
 		(isset($_POST['tour3']))?$tour3 = $_POST['tour3']:$tour3 = 0;
