@@ -10,32 +10,56 @@
     data-fv-icon-invalid="glyphicon glyphicon-remove"
     data-fv-icon-validating="glyphicon glyphicon-refresh"> 
 				<div class="form-group col-lg-2">
+<<<<<<< HEAD
+					<label>คำนำหน้า</label><br>
+					<select name="" form="">
+=======
 					<label>คำนำหน้า</label>
 					<select name="title">
+<<<<<<< HEAD
+>>>>>>> 097a89874cd1401f6010b05f0076322308cbf471
+					  <option value="">นาย</option>
+					  <option value="">นาง</option>
+					  <option value="">นางสาว</option>
+=======
 					  <option value="1">นาย</option>
 					  <option value="2">นาง</option>
 					  <option value="3">นางสาว</option>
+>>>>>>> 8970a576c3a4aa830a681c79d5bdf51095e17556
 
 					</select>
 				</div>
 				<div class="form-group col-lg-5">
+<<<<<<< HEAD
+					<label>ชื่อ</label><br>
+					<input type="text" name="" class="form-control" id="" value="" placeholder="ชื่อ" > 
+				</div>
+				<div class="form-group col-lg-5">
+					<label>นามสกุล</label><br>
+					<input type="text" name="" class="form-control" id="" value="" placeholder="นามสกุล"> 
+=======
 					<label>ชื่อ</label>
 					<input type="text" name="firstname" class="form-control" id="" value="" placeholder="ชื่อ"  data-fv-notempty="true"> 
 				</div>
 				<div class="form-group col-lg-5">
 					<label>นามสกุล</label>
 					<input type="text" name="lastname" class="form-control" id="" value="" placeholder="นามสกุล"> 
+>>>>>>> 097a89874cd1401f6010b05f0076322308cbf471
 				</div>
-
-
+				<br>
 				<div class="form-group col-lg-12">
 					<label>ที่อยู่</label><br>
 					<textarea name="address" style="height:100px;width:100%;" rows="6" cols="50" placeholder="181/52 ...."></textarea>
  
 				</div>
 				<div class="form-group col-lg-6">
+<<<<<<< HEAD
+					<label>จังหวัด</label><br><br>
+					<select name="" form="" style="width:100%;" >
+=======
 					<label>จังหวัด</label><br>
 					<select name="province" style="width:100%;" >
+>>>>>>> 097a89874cd1401f6010b05f0076322308cbf471
 					  <option value="0">- เลือกจังหวัด -</option>
 
 
@@ -195,6 +219,27 @@
 					</select>
 				</div>
 				<div class="form-group col-lg-6">
+<<<<<<< HEAD
+					<label>รหัสไปรษณี</label><br>
+					<input type="text" name="" class="form-control" id="" value="" placeholder="รหัสไปรษณี" > 
+
+				</div>
+				<div class="form-group col-lg-6">
+					<label>เบอร์โทรศัพท์</label><br>
+					<input type="text" name="" class="form-control" id="" value="" placeholder="เบอร์โทรศัพท์" > 
+				</div>
+				<div class="form-group col-lg-6">
+					<label>e-mail</label><br>
+					<input type="email" name="" class="form-control" id="" value="" placeholder="e-mail" > 
+				</div>
+				<div class="form-group col-lg-12">
+					<label>หน่วยงานต้นสังกัด</label><br>
+					<input type="text" name="" class="form-control" id="" value="" placeholder="" > 
+				</div>
+				<div class="form-group col-lg-12">
+					<label>รายการแพ้อาหาร</label><br><br>
+					<textarea style="height:100px;width:100%;" rows="6" cols="50"></textarea>
+=======
 					
 					<label>รหัสไปรษณีย์</label>
 					<input type="text" name="postal" class="form-control" id="" value="" placeholder="รหัสไปรษณีย์" >
@@ -215,6 +260,7 @@
 				<div class="form-group col-lg-12">
 					<label>รายการแพ้อาหาร</label><br>
 					<textarea name="food" style="height:100px;width:100%;" rows="6" cols="50"></textarea>
+>>>>>>> 097a89874cd1401f6010b05f0076322308cbf471
  
 				</div>
 				<div class="form-group col-lg-12	">
@@ -238,12 +284,22 @@
 				
 				<hr>
 				<div class="form-group col-lg-12">
+<<<<<<< HEAD
+					<label>รหัสผ่าน</label><br>
+					<input type="password" name="" class="form-control" id="" value="" min="6" placeholder="กรุณาใส่รหัสผ่านอย่างน้อย 6 ตัวอักษร" > 
+=======
 					<label>รหัสผ่าน</label>
 					<input type="password" name="password" class="form-control" id="" value="" min="6" placeholder="กรุณาใส่รหัสผ่านอย่างน้อย 6 ตัวอักษร" > 
+>>>>>>> 097a89874cd1401f6010b05f0076322308cbf471
 				</div>
 				<div class="form-group col-lg-12">
+<<<<<<< HEAD
+					<label>ใส่รหัสผ่านอีกครั้ง</label><br>
+					<input type="password" name="" class="form-control" id="" value="" min="6" placeholder="กรุณายื่นยันรหัสผ่าน" > 
+=======
 					<label>ใส่รหัสผ่านอีกครั้ง</label>
 					<input type="password" name="" class="form-control" id="" value="" min="6" placeholder="กรุณายืนยันรหัสผ่าน" > 
+>>>>>>> 8970a576c3a4aa830a681c79d5bdf51095e17556
 				</div>
 				<div class="form-group col-lg-12 text-center	">
 					<button type="submit" class="btn btn-primary">ยืนยัน</button>
