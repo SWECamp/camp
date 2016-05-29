@@ -188,7 +188,7 @@ Information Science and Technology (JIST)
     <section class="choose-theme section-padding color-white"  id="program">
         <div class="container">
 
-            <a href="#" style="font-size:30px">ตรวจสอบรายชื่อผู้เข้าร่วมประชุม</a><br>
+            <a href="#" style="font-size:30px">ค้นหารายชื่อผู้เข้าร่วมประชุม</a><br>
 
         </div>
 
