@@ -20,6 +20,7 @@
                     <?php 
         foreach($data->result() as $row) { ?>
         <tr>
+            <?php  $price = ($row->tour1*2000)+($row->tour2*1000)+($row->tour3*1000); ?>
                     <td><?php if($row->title == 1){ echo "นาย";
                     }else if($row->title == 1){ echo "นาง";
                         }else{ echo "นางสาว";
@@ -28,7 +29,7 @@
                     <td class="text-left"><?php echo $row->lastname; ?></td>
                     <td><?php if($row->join == 1) echo "ผู้นำเสนอผลงาน";
                     else echo "ผู้สนใจเข้าร่วมงาน"  ?></td>
-                    <td></td>
+                    <td><?=$price?></td>
                     <td></td>
                     <td><?php 
                         if($row->artifact == 1){
