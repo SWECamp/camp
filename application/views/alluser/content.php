@@ -2,12 +2,21 @@
         <div class="container">
         <h1>ค้นหารายชื่อผู้เข้าร่วมการปประชุมทางวิชาการ</h1>
          <form action="<?php echo site_url('camp/search'); ?>" method="post">
-         	ชื่อ <input type="text" name="firstname" value="<?php echo $firstname; ?>">
-         	นามสกุล <input type="text" name="lastname" value="<?php echo $lastname; ?>"></br></br>
-         	สถานะการชำระเงิน <input type="radio" name="money" value="2" <?php if($money==2) echo "checked"; ?>> ชำระเงินแล้ว
-         	<input type="radio" name="money" value="1" <?php if($money==1) echo "checked"; ?>> ค้างชำระ
-         	<input type="radio" name="money" value="3" <?php if($money==3) echo "checked"; ?>> ไม่เลือก</br>
-         	<input type="submit" value="ค้นหา">
+            <div class="form-group col-lg-6">
+                    <label>ชื่อ   </label><br>
+                    <input type="text" name="firstname" class="form-control" value="<?php echo $firstname; ?>">
+            </div>
+            <div class="form-group col-lg-6">
+                    <label>นามสกุล   </label><br>
+                    <input type="text" name="lastname" class="form-control" value="<?php echo $lastname; ?>">
+            </div>
+
+         	<label>สถานะการชำระเงิน</label> <br>
+            <label><input type="radio"  name="money" value="2" <?php if($money==2) echo "checked"; ?>> ชำระเงินแล้ว</label>&nbsp;&nbsp;&nbsp;
+         	<label><input type="radio"  name="money" value="1" <?php if($money==1) echo "checked"; ?>> ค้างชำระ</label>&nbsp;&nbsp;&nbsp;
+         	<label><input type="radio"  name="money" value="3" <?php if($money==3) echo "checked"; ?>> ไม่เลือก</label>&nbsp;&nbsp;&nbsp;
+            <br>
+            <input type="submit" class="btn btn-primary"  value="ค้นหา">
          </form>
          <br>
           <table class="table table-hover">
