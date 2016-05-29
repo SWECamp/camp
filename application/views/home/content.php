@@ -27,8 +27,8 @@ Information Science and Technology (JIST)
          </div>
 
     </section>
-<section class="choose-theme section-padding color-gray"  id="program">
-        <div class="container text-left ">
+<section class="choose-theme section-padding color-gray">
+        <div class="container text-left " style="color: #000;">
 
             <h2 class="text-center">ขอบเขตของงาน</h2>
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-left">
