@@ -80,9 +80,9 @@ class Model extends CI_Model {
 		$this->db->query($s);
 	}
 
-	public function getlastid(){
+	public function getSearch($s){
 		$this->load->database();
-		$sql = "SELECT * FROM `account` order by `accountID` desc limit 1";
+		$sql = "SELECT * FROM `account` ".$s;
 		$q = $this->db->query($sql);
 		return $q;
 	}

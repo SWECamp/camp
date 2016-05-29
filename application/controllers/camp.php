@@ -305,15 +305,49 @@ class camp extends CI_Controller {
 	{
 		$this->load->helper('url');
 
+			$sql = " where firstname = ''";
+		if(empty($_POST['firstname'])&&empty($_POST['lastname'])&&empty($_POST['money'])){
+			$sql = " where 1";
+		}
+		if(empty($_POST['firstname'])&&empty($_POST['lastname'])){
+			$sql = " where 1";
+		}
+		$this->load->model('Model');
+		if(!empty($_POST['firstname'])){
+			$sql .= " or firstname like('%".$_POST['firstname']."%')";
+		}
+		if(!empty($_POST['lastname'])){
+			$sql .= " or lastname like('%".$_POST['lastname']."%')";
+		}
+
+		if(empty($_POST['money'])){
+			$sql .= "";
+		}else{
+			if($_POST['money'] == '1'){
+				$sql .= " and artifact = 1";
+			}elseif($_POST['money'] == '2'){
+				$sql .= " and artifact = 0";
+			}else{
+				$sql .= " and (artifact = 1 or artifact = 0) ";
+			}
+		}
+		(isset($_POST['firstname']))?$query['firstname']=$_POST['firstname']:$query['firstname']="";
+		(isset($_POST['lastname']))?$query['lastname']=$_POST['lastname']:$query['lastname']="";
+		(isset($_POST['money']))?$query['money']=$_POST['money']:$query['money']="";
+		$sql .= " order by `firstname` asc;";
+		//echo $sql;
+		$query['data']=$this->Model->getSearch($sql);
+
 		$this->load->view('home/head');
 		$this->load->view('home/header');
 		//$this->load->view('home/banner');
-		$this->load->view('alluser/content');
+		$this->load->view('alluser/content',$query);
 		$this->load->view('home/foot');
 
 	}
 	public function success(){
 		$this->load->helper('url');
+
 		$this->load->view('home/head');
 		$this->load->view('home/header');
 		//$this->load->view('home/banner');
