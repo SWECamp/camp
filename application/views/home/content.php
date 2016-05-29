@@ -127,6 +127,15 @@ Information Science and Technology (JIST)
             </div>
 
     </section>
+
+
+    <section class="choose-theme section-padding color-white"  id="program">
+        <div class="container">
+
+            <a href="#" style="font-size:30px">ตรวจสอบรายชื่อผู้เข้าร่วมประชุม</a>
+        </div>
+
+    </section>
 <!--
     <div class="banner_line1"> กำหนดการ</div>
               <div class="banner_brief_text">
