@@ -244,7 +244,10 @@
 					<label>ใส่รหัสผ่านอีกครั้ง</label>
 					<input type="password" name="" class="form-control" id="" value="<?php echo $row->password; ?>" min="6" placeholder="กรุณายืนยันรหัสผ่าน" > 
 				</div>
-				<?php  $price = ($row->tour1*2000)+($row->tour2*1000)+($row->tour3*1000); ?>
+				<?php  
+				if($row->join == 1) $mainpay = 7000;
+				if($row->join == 2) $mainpay = 5000;
+				$price = $mainpay+($row->tour1*2000)+($row->tour2*1000)+($row->tour3*1000); ?>
 				<p class="text-center	">จำนวนเงินที่ต้องชำระ <font color="red" size="20px"> <?=$price?> </font> บาท
 					<br>
 					<?php if ($row->artifact == 0)echo '<font color="green" >ยืนยันการชำระเงินเเล้ว</font>'; 
