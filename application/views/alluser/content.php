@@ -29,9 +29,9 @@
                 	} ?></td>
                 	<td><?php echo $row->email; ?></td>
                 	<td><?php if($row->artifact == 0){
-                		echo "ชำระเงินแล้ว";
+                		echo "<font color='green'>ชำระเงินแล้ว</font>";
                 	}else{
-                		echo "ค้างชำระ";
+                		echo "<font color='orange'>ค้างชำระ</font>";
                 	} ?></td>
                 </tr>
             <?php } ?>
