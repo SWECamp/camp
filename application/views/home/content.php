@@ -164,7 +164,7 @@ Information Science and Technology (JIST)
             <div class="col-md-4" style=" padding-top: 15px; background-color: #FFF; ">
                 <img src="<?php echo base_url(); ?>template/image/pic1.jpg" style="margin-bottom:20px" width="100%">
                 <p style="font-size:20px">
-                <a href="<?php echo site_url('/camp/location'); ?>">สถานที่จัดการประชุม</a></p>
+                <a href="<?php echo site_url('/camp/menuPlace'); ?>">สถานที่จัดการประชุม</a></p>
             </div>
             <div class="col-md-4" style=" padding-top: 15px; background-color: #FFF; ">
                 <img src="<?php echo base_url(); ?>template/image/pic2.jpg" style="margin-bottom:20px" width="100%">
