@@ -1,6 +1,6 @@
 <section class="choose-theme section-padding color-white"  id="about">
         <div class="container">
-        <h1>แก้ไขข้อมูลส่วนตัว</h1>
+        <h1>ผู้ร่วมการประชุมวิชาการ</h1>
         <div class="col-md-2">
         <br>
         </div>
