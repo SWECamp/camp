@@ -20,11 +20,11 @@
 				</div>
 				<div class="form-group col-lg-5">
 					<label>ชื่อ</label>
-					<input type="text" name="firstname" class="form-control" id="" value="" placeholder="ชื่อ"  data-fv-notempty="true"> 
+					<input type="text" name="firstname" class="form-control" id="" value="" placeholder="ชื่อ"  data-fv-notempty="true" required> 
 				</div>
 				<div class="form-group col-lg-5">
 					<label>นามสกุล</label>
-					<input type="text" name="lastname" class="form-control" id="" value="" placeholder="นามสกุล"> 
+					<input type="text" name="lastname" class="form-control" id="" value="" placeholder="นามสกุล" required> 
 				</div>
 				<br>
 				<div class="form-group col-lg-12">
@@ -195,20 +195,20 @@
 				</div>
 				<div class="form-group col-lg-6">
 					<label>รหัสไปรษณีย์</label>
-					<input type="text" name="postal" class="form-control" id="" value="" placeholder="รหัสไปรษณีย์" >
+					<input type="text" name="postal" class="form-control" id="" value="" placeholder="รหัสไปรษณีย์" required>
 
 				</div>
 				<div class="form-group col-lg-6">
 					<label>เบอร์โทรศัพท์</label>
-					<input type="text" name="phone" class="form-control" id="" value="" placeholder="เบอร์โทรศัพท์" > 
+					<input type="text" name="phone" class="form-control" id="" value="" placeholder="เบอร์โทรศัพท์" required> 
 				</div>
 				<div class="form-group col-lg-6">
 					<label>e-mail</label>
-					<input type="text" name="email" class="form-control" id="" value="" placeholder="e-mail" > 
+					<input type="text" name="email" class="form-control" id="" value="" placeholder="e-mail" required> 
 				</div>
 				<div class="form-group col-lg-12">
 					<label>หน่วยงานต้นสังกัด</label>
-					<input type="text" name="department" class="form-control" id="" value="" placeholder="" > 
+					<input type="text" name="department" class="form-control" id="" value="" placeholder="" required> 
 				</div>
 				<div class="form-group col-lg-12">
 					<label>รายการแพ้อาหาร</label><br>
@@ -236,11 +236,11 @@
 				<hr>
 				<div class="form-group col-lg-12">
 					<label>รหัสผ่าน</label>
-					<input type="password" name="password" class="form-control" id="" value="" min="6" placeholder="กรุณาใส่รหัสผ่านอย่างน้อย 6 ตัวอักษร" > 
+					<input type="password" name="password" class="form-control" id="" value="" min="6" placeholder="กรุณาใส่รหัสผ่านอย่างน้อย 6 ตัวอักษร" required> 
 				</div>
 				<div class="form-group col-lg-12">
 					<label>ใส่รหัสผ่านอีกครั้ง</label>
-					<input type="password" name="" class="form-control" id="" value="" min="6" placeholder="กรุณายืนยันรหัสผ่าน" > 
+					<input type="password" name="" class="form-control" id="" value="" min="6" placeholder="กรุณายืนยันรหัสผ่าน" required> 
 				</div>
 				<div class="form-group col-lg-12 text-center	">
 					<button type="submit" class="btn btn-primary">ยืนยัน</button>

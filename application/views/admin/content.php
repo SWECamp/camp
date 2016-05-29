@@ -4,11 +4,13 @@
                         
             <center><table borber="1">
             	<tr>
-                    <th>ชื่อต้น</th>
-            		<th>ชื่อ</th>
-                    <th>นามสกุล</th>
-                    <th>email</th>
-            		<th>ยืนยัน</th>
+                    <th style="text-align:center">ชื่อต้น</th>
+            		<th style="text-align:center">ชื่อ</th>
+                    <th style="text-align:center">นามสกุล</th>
+                    <th style="text-align:center">ประเภท</th>
+                    <th style="text-align:center">จำนวนเงิน</th>
+                    <th style="text-align:center">วันที่ชำระเงิน</th>
+            		<th style="text-align:center">สถานะการชำระเงิน</th>
             	</tr>
         <?php 
         foreach($data->result() as $row) { ?>
@@ -19,12 +21,15 @@
                         } ?></td>
                     <td><?php echo $row->firstname; ?></td>
                     <td><?php echo $row->lastname; ?></td>
-                    <td><?php echo $row->email; ?></td>
+                    <td><?php if($row->join == 1) echo "ผู้นำเสนอผลงาน";
+                    else echo "ผู้สนใจเข้าร่วมงาน"  ?></td>
+                    <td></td>
+                    <td></td>
                     <td><?php 
                         if($row->artifact == 1){
                             echo "<a href='".site_url('camp/reArtifact/'.$row->accountID)."'>ยืนยัน</a>";
                         }else{
-                            echo "ยืนยันแล้ว";
+                            echo "ยืนยันการชำระเงินแล้ว";
                         }
                      ?></td>
                     <!-- echo "<a href='".site_url('camp/reArtifact/'.$row->accountID)."'>ยืนยัน</a>":echo ""; -->
