@@ -21,7 +21,7 @@
                                         <label class="sr-only" for="form-password">Password</label>
                                         <input type="password" name="password" placeholder="xxxxxxx" class="form-password form-control" id="form-password">
                                     </div>
-                                    <button type="submit" class="btn">Sign in!</button>
+                                    <button type="submit" class="btn">เข้าสู่ระบบ !</button>
                                 </form>
                             </div>
                         </div>
