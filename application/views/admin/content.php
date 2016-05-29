@@ -1,16 +1,6 @@
 <section class="choose-theme section-padding color-white"  id="about">
         <div class="container">
         <h1>ADMIN</h1>
-        <div class="input-append date form_datetime">
-            <input size="16" type="text" value="" readonly>
-            <span class="add-on"><i class="icon-th"></i></span>
-        </div>
-         
-        <script type="text/javascript">
-            $(".form_datetime").datetimepicker({
-                format: "dd MM yyyy - hh:ii"
-            });
-        </script>           
         <table class="table table-hover">
             <thead>
                 <tr>
@@ -28,6 +18,7 @@
                     <?php 
         foreach($data->result() as $row) { ?>
         <tr>
+            <form action="<?php echo site_url('camp/reArtifact/'.$row->accountID)?>" method="post">
             <?php  $mainpay=0;
                 if($row->join == 1) $mainpay = 7000;
                 elseif($row->join == 2) $mainpay = 5000;
@@ -39,25 +30,36 @@
                     <td class="text-left"><?php echo $row->firstname; ?></td>
                     <td class="text-left"><?php echo $row->lastname; ?></td>
                     <td><?php if($row->join == 1) echo "ผู้นำเสนอผลงาน";
-                    else echo "ผู้สนใจเข้าร่วมงาน"  ?></td>
+                    else echo "ผู้สนใจเข้าร่วมงาน" ; ?></td>
                     <td><?=$price?></td>
-                    <td></td>
+                    <td><?php 
+                        if($row->artifact == 0){
+                            echo $row->datesubit;
+                        }else{
+                            ?>
+                            <input type="text" name="dat" placeholder="<?=date("Y-m-d H:i:s")?>" required>
+                            <?php
+                        }
+                     ?></td>
                     <td><?php 
                         if($row->artifact == 1){
-                            echo "<a href='".site_url('camp/reArtifact/'.$row->accountID)."'>ยืนยัน</a>";
+                            //echo "<a href='".site_url('camp/reArtifact/'.$row->accountID)."'>ยืนยัน</a>";
+                            ?>
+                            <input type="submit" value="ยืนยัน"><?php
                         }else{
                             echo "<font style='color:green;'>ยืนยันการชำระเงินแล้ว</font>";
                         }
                      ?></td>
                     <!-- echo "<a href='".site_url('camp/reArtifact/'.$row->accountID)."'>ยืนยัน</a>":echo ""; -->
         </tr>
+        </form>
         <?php }
          ?>
 
                 </tr>
             </tbody>
         </table>
-
+        
 
         </div>
     </section>

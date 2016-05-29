@@ -246,8 +246,8 @@ class camp extends CI_Controller {
 		$this->load->helper('url');
 
 		$this->load->model('Model');
-
-		$query=$this->Model->setReArtifact($id);
+		$date = $_POST['dat'];
+		$query=$this->Model->setReArtifact($id,$date);
 		redirect('camp/admin', 'refresh');
 	}
 

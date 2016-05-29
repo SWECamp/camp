@@ -54,10 +54,10 @@ class Model extends CI_Model {
 		//return $q;
 	}
 
-	public function setReArtifact($id)
+	public function setReArtifact($id,$dat)
 	{
 		$this->load->database();
-		$sql = "UPDATE `swecamp`.`account` SET `artifact` = '0' WHERE `account`.`accountID` = ".$id.";";
+		$sql = "UPDATE `swecamp`.`account` SET `artifact` = '0',`datesubit` = '".$dat."' WHERE `account`.`accountID` = ".$id.";";
 		
 		$tt = $this->db->query($sql);
 		//return $query->result(); เอาไปเฉพาะรีซอล
