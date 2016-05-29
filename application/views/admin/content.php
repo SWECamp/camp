@@ -1,8 +1,16 @@
 <section class="choose-theme section-padding color-white"  id="about">
         <div class="container">
         <h1>ADMIN</h1>
-
-
+        <div class="input-append date form_datetime">
+            <input size="16" type="text" value="" readonly>
+            <span class="add-on"><i class="icon-th"></i></span>
+        </div>
+         
+        <script type="text/javascript">
+            $(".form_datetime").datetimepicker({
+                format: "dd MM yyyy - hh:ii"
+            });
+        </script>           
         <table class="table table-hover">
             <thead>
                 <tr>

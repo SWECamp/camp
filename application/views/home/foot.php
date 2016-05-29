@@ -60,9 +60,10 @@
     </script>
     
 <!-- Latest compiled and minified JavaScript -->
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"></script>
-    
+   <script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
+   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
 
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 
    <script src="<?php echo base_url(); ?>template/bootstrap/js/bootstrap.min.js" integrity="" crossorigin="anonymous"></script>
     
