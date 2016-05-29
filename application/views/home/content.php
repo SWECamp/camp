@@ -22,8 +22,8 @@ Information Science and Technology (JIST)
          </div>
 
     </section>
-<section class="choose-theme section-padding color-gray"  id="program">
-        <div class="container text-left ">
+<section class="choose-theme section-padding color-gray">
+        <div class="container text-left " style="color: #000;">
 
             <h2 class="text-center">ขอบเขตของงาน</h2>
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-left">
@@ -164,17 +164,17 @@ Information Science and Technology (JIST)
             <div class="col-md-4" style=" padding-top: 15px; background-color: #FFF; ">
                 <img src="<?php echo base_url(); ?>template/image/pic1.jpg" style="margin-bottom:20px" width="100%">
                 <p style="font-size:20px">
-                สถานที่จัดการประชุม</p>
+                <a href="<?php echo site_url('/camp/location'); ?>">สถานที่จัดการประชุม</a></p>
             </div>
             <div class="col-md-4" style=" padding-top: 15px; background-color: #FFF; ">
                 <img src="<?php echo base_url(); ?>template/image/pic2.jpg" style="margin-bottom:20px" width="100%">
-                <p style="font-size:20px">
-                กิจกรรมการท่องเที่ยว</p>
+                <p style="font-size:20px"><a href="<?php echo site_url('/camp/tourac'); ?>">กิจกรรมการท่องเที่ยว</a>
+                </p>
             </div>
             <div class="col-md-4" style=" padding-top: 15px; background-color: #FFF; ">
                 <img src="<?php echo base_url(); ?>template/image/pic3.png" style="margin-bottom:20px" width="100%">
                 <p style="font-size:20px">
-                Best Paper Award</p>
+                <a href="<?php echo site_url('/camp/best'); ?>">Best Paper Award</a></p>
             </div>
         </div>
 
@@ -183,7 +183,7 @@ Information Science and Technology (JIST)
     <section class="choose-theme section-padding color-white"  id="program">
         <div class="container">
 
-            <a href="#" style="font-size:30px">ตรวจสอบรายชื่อผู้เข้าร่วมประชุม</a><br>
+            <a href="<?php echo site_url('/camp/search'); ?>" style="font-size:30px">ค้นหารายชื่อผู้เข้าร่วมประชุม</a><br>
 
         </div>
 

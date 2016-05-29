@@ -1,12 +1,28 @@
 <section class="choose-theme section-padding color-white"  id="about">
         <div class="container">
-        <h1>แก้ไขข้อมูลส่วนตัว</h1>
+        <h1>ผู้ร่วมการประชุมวิชาการ</h1>
         <div class="col-md-2">
         <br>
-        	
         </div>
 		<div class="col-md-8 text-left">
+			<hr> 
 			<?php foreach($data->result() as $row) { ?>
+
+
+			<?php  
+				$mainpay=0;
+				if($row->join == 1) $mainpay = 7000;
+				elseif($row->join == 2) $mainpay = 5000;
+
+				$price = $mainpay+($row->tour1*2000)+($row->tour2*1000)+($row->tour3*1000); ?>
+				<p class="text-center	">จำนวนเงินที่ต้องชำระ <font color="red" size="20px"> <?=$price?> </font> บาท
+					<br>
+					<?php if ($row->artifact == 0)echo '<font color="green" >ยืนยันการชำระเงินเเล้ว</font>'; 
+				else echo '<font color="red" >รอตรวจสอบการชำระเงิน</font>'; ?>	
+				</p>
+
+
+				<hr> 
 			<form action="<?php echo site_url('camp/reUser/'.$row->accountID)?>" method="post"> 
 				<div class="form-group col-lg-2">
 					<label>คำนำหน้า</label>
@@ -219,8 +235,8 @@
 				<div class="form-group col-lg-12	">
 					<label>เลือกประเภทผู้เข้าร่วมประชุมวิชาการ</label>
 					<select name="join" style="width:100%;" <?php if($row->artifact == 0) echo " disabled"; ?>>
-					  <option value="1" <?php if($row->join == 1) echo "selected"; ?>>ผู้นำเสนอผลงาน</option>
-					  <option value="2" <?php if($row->join == 2) echo "selected"; ?>>ผู้สนใจเข้าร่วมงาน</option>
+					  <option value="1" <?php if($row->join == 1) echo "selected"; ?>>ผู้นำเสนอผลงาน - <font color="red">ค่าธรรมเนียม 7,000 บาท </font></option>
+					  <option value="2" <?php if($row->join == 2) echo "selected"; ?>>ผู้สนใจเข้าร่วมงาน - <font color="red">ค่าธรรมเนียม 5,000 บาท</font></option>
 
 					</select>
 				</div>
@@ -244,6 +260,8 @@
 					<label>ใส่รหัสผ่านอีกครั้ง</label>
 					<input type="password" name="" class="form-control" id="" value="<?php echo $row->password; ?>" min="6" placeholder="กรุณายืนยันรหัสผ่าน" > 
 				</div>
+				
+				
 				<div class="form-group col-lg-12 text-center	">
 					<button type="submit" class="btn btn-primary">ยืนยัน</button>
 				</div>

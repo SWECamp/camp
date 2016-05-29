@@ -196,13 +196,13 @@ class camp extends CI_Controller {
 		$sql = "INSERT INTO `account`(`accountID`, `title`, `firstname`, `lastname`, `address`, `province`, `postalcode`, `phoneno`, `email`, `department`, `food`, `password`, `artifact`, `join`, `tour1`, `tour2`, `tour3`) VALUES (null,'".$title."','".$firstname."','".$lastname."','".$address."','".$province."','".$postal."','".$phone."','".$email."','".$department."','".$food."','".$password."','".$artifect."','".$join."','".$tour1."','".$tour2."','".$tour3."')";
 
 		$this->load->model('Model');
-		echo "บันทึกสำเร็จ";
+		//echo "บันทึกสำเร็จ";
 		$this->Model->setAccout($sql);
 
 		$query=$this->Model->getlastid();
-		foreach ($query->result() as $value) {
-			redirect('camp/user/'.$value->accountID, 'refresh');
-		}
+		//foreach ($query->result() as $value) {
+			redirect('camp/success/', 'refresh');
+		//}
 		//redirect('camp/user', 'refresh');
 	}
 
@@ -245,7 +245,8 @@ class camp extends CI_Controller {
 		$food = $_POST['food'];
 		$password = $_POST['password'];
 		$artifect = 1;
-		$join = $_POST['join'];
+		//$join = $_POST['join'];
+		(isset($_POST['join']))?$join = $_POST['join']:$join = 1;
 		(isset($_POST['tour1']))?$tour1 = $_POST['tour1']:$tour1 = 0;
 		(isset($_POST['tour2']))?$tour2 = $_POST['tour2']:$tour2 = 0;
 		(isset($_POST['tour3']))?$tour3 = $_POST['tour3']:$tour3 = 0;
@@ -274,6 +275,51 @@ class camp extends CI_Controller {
 		{
 			echo "Email Can Not Send.";
 		}
+	}
+
+	public function tourac()
+	{
+		$this->load->model('Model');
+		$this->load->helper('url');
+
+		$this->load->view('home/head');
+		$this->load->view('home/header');
+		//$this->load->view('home/banner');
+		$this->load->view('tour/content');
+		$this->load->view('home/foot');
+	}
+
+	public function location()
+	{
+		$this->load->helper('url');
+
+		$this->load->view('home/head');
+		$this->load->view('home/header');
+		//$this->load->view('home/banner');
+		$this->load->view('location/content');
+		$this->load->view('home/foot');
+
+	}
+
+	public function search()
+	{
+		$this->load->helper('url');
+
+		$this->load->view('home/head');
+		$this->load->view('home/header');
+		//$this->load->view('home/banner');
+		$this->load->view('alluser/content');
+		$this->load->view('home/foot');
+
+	}
+	public function success(){
+		$this->load->helper('url');
+		$this->load->view('home/head');
+		$this->load->view('home/header');
+		//$this->load->view('home/banner');
+		$this->load->view('success/content');
+		$this->load->view('home/foot');
+
 	}
 }
 
