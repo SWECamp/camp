@@ -45,7 +45,7 @@
                         if($row->artifact == 1){
                             //echo "<a href='".site_url('camp/reArtifact/'.$row->accountID)."'>ยืนยัน</a>";
                             ?>
-                            <input type="submit" value="ยืนยัน"><?php
+                            <input type="submit" class="btn btn-info" value="ยืนยัน"><?php
                         }else{
                             echo "<font style='color:green;'>ยืนยันการชำระเงินแล้ว</font>";
                         }
