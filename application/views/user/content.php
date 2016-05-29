@@ -245,8 +245,10 @@
 					<input type="password" name="" class="form-control" id="" value="<?php echo $row->password; ?>" min="6" placeholder="กรุณายืนยันรหัสผ่าน" > 
 				</div>
 				<?php  
+				$mainpay=0;
 				if($row->join == 1) $mainpay = 7000;
-				if($row->join == 2) $mainpay = 5000;
+				elseif($row->join == 2) $mainpay = 5000;
+
 				$price = $mainpay+($row->tour1*2000)+($row->tour2*1000)+($row->tour3*1000); ?>
 				<p class="text-center	">จำนวนเงินที่ต้องชำระ <font color="red" size="20px"> <?=$price?> </font> บาท
 					<br>

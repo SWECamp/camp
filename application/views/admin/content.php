@@ -20,8 +20,9 @@
                     <?php 
         foreach($data->result() as $row) { ?>
         <tr>
-            <?php  if($row->join == 1) $mainpay = 7000;
-                if($row->join == 2) $mainpay = 5000;
+            <?php  $mainpay=0;
+                if($row->join == 1) $mainpay = 7000;
+                elseif($row->join == 2) $mainpay = 5000;
                 $price = $mainpay+($row->tour1*2000)+($row->tour2*1000)+($row->tour3*1000); ?>
                     <td><?php if($row->title == 1){ echo "นาย";
                     }else if($row->title == 1){ echo "นาง";
