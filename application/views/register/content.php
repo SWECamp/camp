@@ -20,7 +20,7 @@
 				</div>
 				<div class="form-group col-lg-5">
 					<label>ชื่อ</label>
-					<input type="text" name="firstname" class="form-control" id="" value="" placeholder="ชื่อ"  data-bv-notempty> 
+					<input type="text" name="firstname" class="form-control" id="" value="" placeholder="ชื่อ"  data-fv-notempty="true"> 
 				</div>
 				<div class="form-group col-lg-5">
 					<label>นามสกุล</label>

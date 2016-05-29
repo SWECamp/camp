@@ -1,7 +1,7 @@
 <section class="banner top" id="home" style="background-image:url(<?php echo base_url(); ?>template/image/banner1.jpg);>
         <div class="texture">
         <div class="container text-left" style=" padding-top: 30px; font-size: 30px; ">
-          Technology for Digital Life  
+            
            <!--<div class="col-9 mb-12 mb-center banner-box text-left">
                <div class="banner_line1">x</div>
                <div class="banner_brief_text">มหาวิทยาลัยวลัยลักษณ์ได้รับเกียรติให้เป็นเจ้าภาพการประชุมวิชาการระดับประเทศ NCIT 2560 โดยมีเป้าหมายเพื่อกระตุ้นและส่งเสริมการวิจัยและพัฒนาองค์ความรู้ทางด้านเทคโนโลยีสารสนเทศภายในประเทศให้แพร่หลาย </div>

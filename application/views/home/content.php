@@ -30,7 +30,7 @@ Information Science and Technology (JIST)
 <section class="choose-theme section-padding color-gray"  id="program">
         <div class="container text-left ">
 
-            <h2>ขอบเขตของงาน</h2>
+            <h2 class="text-center">ขอบเขตของงาน</h2>
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-left">
             <br>- Artificial Intelligence
             <br>- Big Data
@@ -128,11 +128,68 @@ Information Science and Technology (JIST)
 
     </section>
 
+    <section class="choose-theme section-padding color-white"  id="program">
+        <div class="container">
+            <h2>กำหนดการประชุม</h2>
+            <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody >
+                            <tr>
+                                <td style="text-align:right;">สมัครส่งบทความวิจัย   </td>
+                                <td style="text-align:left;">1 พฤษภาคม – 17 สิงหาคม พ.ศ. 2560</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right;">แจ้งผลการคัดเลือกบทความวิจัย </td>
+                                <td style="text-align:left;">19 กันยายน พ.ศ. 2560</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right;">ส่งบทความพร้อมตีพิมพ์ </td>
+                                <td style="text-align:left;">7 ตุลาคม พ.ศ. 2560</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right;">วันสุดท้ายของการลงทะเบียน </td>
+                                <td style="text-align:left;">14 ตุลาคม พ.ศ. 2560</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right;">การนำเสนอผลงาน</td>
+                                <td style="text-align:left;">25-26 ตุลาคม พ.ศ. 2560</td>
+                            </tr>
+                        </tbody>
+                    </table>
+        </div>
+
+    </section>
+
+    <section class="choose-theme section-padding color-gray"  id="program">
+        <div class="container">
+            <div class="col-md-4" style=" padding-top: 15px; background-color: #FFF; ">
+                <img src="<?php echo base_url(); ?>template/image/pic1.jpg" style="margin-bottom:20px" width="100%">
+                <p style="font-size:20px">
+                สถานที่จัดการประชุม</p>
+            </div>
+            <div class="col-md-4" style=" padding-top: 15px; background-color: #FFF; ">
+                <img src="<?php echo base_url(); ?>template/image/pic2.jpg" style="margin-bottom:20px" width="100%">
+                <p style="font-size:20px">
+                กิจกรรมการท่องเที่ยว</p>
+            </div>
+            <div class="col-md-4" style=" padding-top: 15px; background-color: #FFF; ">
+                <img src="<?php echo base_url(); ?>template/image/pic3.png" style="margin-bottom:20px" width="100%">
+                <p style="font-size:20px">
+                Best Paper Award</p>
+            </div>
+        </div>
+
+    </section>
 
     <section class="choose-theme section-padding color-white"  id="program">
         <div class="container">
 
-            <a href="#" style="font-size:30px">ตรวจสอบรายชื่อผู้เข้าร่วมประชุม</a>
+            <a href="#" style="font-size:30px">ตรวจสอบรายชื่อผู้เข้าร่วมประชุม</a><br>
+
         </div>
 
     </section>
